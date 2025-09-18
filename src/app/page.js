@@ -1,11 +1,12 @@
-import React from 'react'
+import { Button } from "@/components/ui/button";
+import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-      <p>my name is irfan</p>
+    <div className="flex items-center justify-center h-screen">
+      <Button>Submit</Button>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
