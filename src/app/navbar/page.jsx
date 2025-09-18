@@ -18,12 +18,15 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.png" alt="AiELM" width={28} height={28} />
-          <span className="font-semibold text-chart-2">AiELM</span>
+          <div className="text-primary-foreground">
+            Ai
+            <span className="font-semibold text-chart-2">ELM</span>
+          </div>
         </Link>
 
         {/* Navigation links */}
         <NavigationMenu className="hidden md:block">
-          <NavigationMenuList className="gap-6 text-sm text-muted-foreground">
+          <NavigationMenuList className="gap-6 text-sm text-muted">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="#">Why AiELM</Link>
