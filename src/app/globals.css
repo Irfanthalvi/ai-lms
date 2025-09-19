@@ -52,7 +52,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
 --primary: oklch(51.6% 0.112 210);
-  --primary-foreground: oklch(0.985 0 0);
+  --primary-foreground: oklch(18.595% 0.02562 209.101);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -119,4 +119,14 @@
   body {
     @apply bg-background text-foreground;
   }
+html, body {
+  overflow-y: auto; /* vertical scroll allow rahega */
+  scrollbar-width: none; /* Firefox ke liye */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge ke liye */
+}
+
 }
