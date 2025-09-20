@@ -1,0 +1,35 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+
+const Header = () => {
+  return (
+    <div className="bg-primary min-h-screen flex flex-col items-center justify-center text-center px-6">
+      {/* Tagline */}
+      <div className="bg-primary-foreground text-secondary px-4 rounded-full text-sm mb-4 p-1">
+        World’s Best, AI-First Learning Platform
+      </div>
+
+      {/* Heading */}
+      <h1 className="text-2xl md:text-5xl font-bold text-secondary max-w-5xl leading-tight mb-6">
+        Optimizing Workforce Efficiency <br /> with Intelligent Learning
+      </h1>
+
+      {/* Video Section in Card */}
+      <Card className="w-full max-w-4xl rounded-2xl shadow-xl">
+        <CardContent className="p-0">
+          <video
+            className="w-full h-auto rounded-2xl"
+            controls
+            poster="/thumbnail.jpg"
+          >
+            <source src="/team-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </CardContent>
+      </Card>
+
+    </div>
+  );
+};
+
+export default Header;
