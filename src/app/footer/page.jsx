@@ -14,15 +14,17 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 const Footer = () => {
   return (
     <footer className="w-full bg-card text-foreground text-[14px] leading-[11px]">
-      <div className="mx-auto max-w-[1500px] px-2 lg:px-[190px] py-6 space-y-10">
+      <div className="mx-auto max-w-[1500px] px-2 lg:px-[190px] py-4 space-y-10">
         {/* === Row 1: Logo + Nav === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <Image src="/logo.png" alt="AiELM" width={36} height={36} priority />
-            <div className="text-secondary font-normal text-[28px] leading-[36px]">
-              Ai<span className="text-primary-foreground font-semibold">ELM</span>
-            </div>
+             <Image 
+               src="/logo-option-3.png" 
+               alt="AiELM Logo" 
+               width={110}   // 👈 size adjust kar sakte ho
+               height={110} 
+             />
           </div>
 
           {/* Navigation */}
@@ -67,15 +69,15 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-border" />
+        <div className="border bg-border" />
 
         {/* === Row 3: Copyright === */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-secondary text-[14px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pb-6 text-secondary text-[13px]">
           <span>Copyright © 2025 AiELM. All rights reserved.</span>
           <div className="flex flex-wrap gap-6 lg:gap-8">
-            <a href="#" className="hover:text-primary transition-colors text-[14px]">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors text-[14px]">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors text-[14px]">Sitemap</a>
+            <a href="#" className=" transition-colors text-[13px]">Terms of Service</a>
+            <a href="#" className=" transition-colors text-[13px]">Privacy Policy</a>
+            <a href="#" className=" transition-colors text-[13px]">Sitemap</a>
           </div>
         </div>
       </div>

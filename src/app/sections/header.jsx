@@ -3,30 +3,41 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Header = () => {
   return (
-    <div className="bg-primary min-h-screen flex flex-col items-center justify-center text-center px-6">
-      {/* Tagline */}
-      <div className="bg-primary-foreground text-secondary px-4 rounded-full text-sm mb-4 p-1">
-        World’s Best, AI-First Learning Platform
+    <div className="bg-primary min-h-[170vh] flex flex-col items-center justify-center text-center px-6">
+      {/* Heading Section */}
+      <div className="w-[1312px] h-[236px] p-[40px]">
+        <div className="flex flex-col items-center">
+          {/* Tagline */}
+          <div className="bg-primary-foreground text-secondary w-[320px] h-[28px] pr-4 pl-4 pt-[2px] pb-[2px] gap-[6px] rounded-full text-sm mb-4 flex items-center justify-center">
+            World’s Best, AI-First Learning Platform
+          </div>
+
+          {/* Heading */}
+          <h1
+            style={{ fontFamily: "var(--headline-font-family)" }}
+            className="w-[830px] h-[96px] font-bold text-[48px] leading-[100%] text-center text-secondary mx-auto"
+          >
+            Optimizing Workforce Efficiency <br /> with Intelligent Learning
+          </h1>
+        </div>
       </div>
 
-      {/* Heading */}
-      <h1 className="text-2xl md:text-5xl font-bold text-secondary max-w-5xl leading-tight mb-6">
-        Optimizing Workforce Efficiency <br /> with Intelligent Learning
-      </h1>
-
       {/* Video Section in Card */}
-      <Card className="w-full max-w-4xl rounded-2xl shadow-xl">
-        <CardContent className="p-0">
+      <Card className="w-[1100px] h-[680px] rounded-2xl shadow-xl overflow-hidden">
+        <CardContent className="p-0 w-full h-full">
           <video
-            className="w-full h-auto rounded-2xl"
-            controls
-            poster="/thumbnail.jpg"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover rounded-2xl"
           >
-            <source src="/team-video.mp4" type="video/mp4" />
+            <source src="/team-work-2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </CardContent>
       </Card>
+
 
     </div>
   );
