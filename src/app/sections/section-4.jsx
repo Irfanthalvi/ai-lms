@@ -10,7 +10,7 @@ const Section4 = () => {
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 items-center pl-55">
 
         {/* LEFT CONTENT */}
-        <div className="border w-[700px] pr-20">
+        <div className=" w-[700px] pr-20">
           {/* Heading */}
           <h2 className="text-3xl lg:text-4xl font-bold leading-snug mb-6">
             Building Smarter Compliance {" "}
@@ -111,7 +111,7 @@ const Section4 = () => {
               alt="Dashboard, Certificate and Mobile"
               width={900}
               height={800}
-              className="object-contain rounded-md shadow-lg border"
+              className="object-contain rounded-md shadow-lg"
             />
           </div>
         </div>

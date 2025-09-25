@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Header = () => {
   return (
-    <div className="bg-primary min-h-[170vh] flex flex-col items-center justify-center text-center px-6">
+    <div className="bg-chart-3 min-h-[170vh] flex flex-col items-center justify-center text-center px-6">
       {/* Heading Section */}
       <div className="w-[1312px] h-[236px] p-[40px]">
         <div className="flex flex-col items-center">
           {/* Tagline */}
-          <div className="bg-primary-foreground text-secondary w-[320px] h-[28px] pr-4 pl-4 pt-[2px] pb-[2px] gap-[6px] rounded-full text-sm mb-4 flex items-center justify-center">
+          <div className="bg-primary text-secondary w-[320px] h-[28px] pr-4 pl-4 pt-[2px] pb-[2px] gap-[6px] rounded-full text-sm mb-4 flex items-center justify-center">
             World’s Best, AI-First Learning Platform
           </div>
 
