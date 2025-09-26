@@ -16,20 +16,9 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <header
-      className="
-        fixed top-0 left-0 z-50
-        w-full
-        h-[68px] 
-        px-[225px] 
-        bg-background/60 
-        border-b border-border/20
-        flex items-center justify-center
-      "
-    >
+    <header className="fixed top-0 left-0 z-50 w-full h-[68px] bg-background backdrop-blur-xl border-b border-border/5 flex items-center justify-center">
       {/* Inner container */}
-      <div className="w-full flex items-center justify-between gap-[60px]">
-        
+      <div className="w-full flex items-center justify-between gap-[60px] px-[225px]">
         {/* Logo */}
         <Link href="/" className="flex items-center cursor-pointer">
           <Image
@@ -41,20 +30,21 @@ const Navbar = () => {
         </Link>
 
         {/* Nav Links (dynamic) */}
-        <nav className="flex items-center gap-2 px-16 py-10">
+        <nav className="flex items-center mt-[-1px] mr-[13px] space-x-2">
           {navItems.map((item, index) => (
             <Link
               key={index}
               href={item.href}
-              className="px-4 py-2 text-base rounded-md "
+              className="px-4 py-2 text-[14.5px] rounded-md hover:bg-accent/20"
+              style={{ wordSpacing: "0.1em"}}
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        {/* Get In Touch Button */}
-        <Button>Get In Touch</Button>
+        <Button className="text-[14px] mt-[-1px]">Get In Touch</Button>
+
       </div>
     </header>
   );

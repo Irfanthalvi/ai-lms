@@ -59,15 +59,16 @@
   --radius: 0.625rem;
 
   /* Light mode solid colors */
-  --background: oklch(0.2161 0.0061 56.04);             /* #1C1917 */ 
+  --background: oklch(0.2161 0.0061 56.04 / 85.1%);            /* #1C1917 */ 
   --foreground: oklch(1 0 0);                          /* #FFFFFF */  
   
     --primary: oklch(0.4883 0.0835 205.88);                /* #006D77 */
   --primary-foreground: oklch(0.7772 0.0679 187.48);      /* #83C5BE */
 
 
-  --card: oklch(98.7% 0.002 95);
-  --card-foreground: oklch(18% 0.025 209);
+  --card: oklch(0.243 0.027 195.52);
+  --card-foreground: oklch(0.2037 0.0217 195.58);
+
   --popover: oklch(100% 0 0);                 /* #FFFFFF */
   --popover-foreground: oklch(18% 0.025 209);
 
@@ -182,6 +183,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
   html, body {
     overflow-y: auto;

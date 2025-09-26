@@ -12,7 +12,7 @@ import {
 
 const Section2 = () => {
   return (
-    <section className="relative w-full py-20 px-6 bg-gradient-to-b from-[#0a1a1a] to-[#0f2424] text-white overflow-hidden">
+    <section className="relative w-full py-20 px-6 bg-gradient-to-b from-card-foreground to-card text-white overflow-hidden">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 pointer-events-none" />
 
