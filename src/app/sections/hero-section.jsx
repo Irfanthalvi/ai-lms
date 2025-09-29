@@ -3,23 +3,21 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="relative bg-card min-h-[170vh] flex flex-col items-center justify-center text-center">
-      
+    <div className="relative bg-card min-h-[161vh] flex flex-col items-center justify-center text-center">
+      <div className=" mt-20">
       {/* Background pattern image */}
       <div className="absolute inset-0 -z-10 w-full h-full">
         <Image
           src="/patterns.png"
-          alt="Background Patterns"
           fill
           style={{ objectFit: "cover" }}
           quality={100}
           className="pointer-events-none"
         />
       </div>
-
       {/* Tagline */}
       <div className="w-[1312px] h-[236px] flex flex-col items-center gap-[36px] mt-10 z-10">
-        <div className="bg-primary text-secondary w-[320px] rounded-full flex items-center justify-center">
+        <div className="bg-primary text-#B3F9FF w-[320px] rounded-full flex items-center justify-center">
           World’s Best, AI-First Learning Platform
         </div>
 
@@ -44,6 +42,7 @@ const Header = () => {
           <source src="/team-work-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      </div>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="px-4 py-2 text-[14.5px] rounded-md hover:bg-accent/20"
+              className="px-4 py-2 text-[14.5px] rounded-md"
               style={{ wordSpacing: "0.1em"}}
             >
               {item.label}
