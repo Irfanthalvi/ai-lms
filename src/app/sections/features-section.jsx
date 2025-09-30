@@ -4,30 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
-// Card data
-const cardData = [
-  {
-    img: "/picture.png",
-    title: "Verified Learning",
-    desc: "Biometrics and identity checks ensure training credibility.",
-  },
-  {
-    img: "/picture1.png",
-    title: "AI-Driven Content",
-    desc: "Adaptive, personalized learning paths are customized for every role.",
-  },
-  {
-    img: "/picture2.png",
-    title: "Real-Time Insights",
-    desc: "Accelerate insights across workforce impact, not just completion.",
-  },
-  {
-    img: "/picture3.png",
-    title: "Compliance Made Easy",
-    desc: "Automated regulatory updates — always audit-ready.",
-  },
-];
+import { featuresMock } from "../data/feature-data";
 
 const FeaturesSection = () => {
   return (
@@ -46,12 +23,13 @@ const FeaturesSection = () => {
 
         {/* Cards */}
         <div className="w-full max-w-[1250px] mx-auto mt-15.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cardData.map((item, idx) => (
+          {featuresMock.map((item, idx) => (
             <Card
               key={idx}
-              className=" rounded-xl overflow-hidden flex flex-col h-[355px] w-full p-0 "
+              className="rounded-xl overflow-hidden flex flex-col h-[355px] w-full p-0"
               style={{
-                background: "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
+                background:
+                  "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
               }}
             >
               {/* Image */}
@@ -64,20 +42,15 @@ const FeaturesSection = () => {
                 />
               </div>
 
-
               {/* Content */}
               <CardContent className="flex flex-col text-left p-5 relative">
-                {/* Title ko custom position */}
                 <h3 className="font-bold text-background relative top-[-15px] left-[6px]">
                   {item.title}
                 </h3>
-
-                {/* Description ko alag adjust */}
                 <p className="font-semi-bold text-sm text-background/90 relative top-[-14px] left-[6px]">
                   {item.desc}
                 </p>
               </CardContent>
-
             </Card>
           ))}
         </div>
@@ -103,8 +76,6 @@ const FeaturesSection = () => {
               Request a Demo
             </Button>
           </div>
-
-
         </div>
       </div>
 
