@@ -9,6 +9,7 @@ const Header = () => {
       <div className="absolute inset-0 -z-10 w-full h-full">
         <Image
           src="/patterns.png"
+          alt="Background pattern"
           fill
           style={{ objectFit: "cover" }}
           quality={100}
