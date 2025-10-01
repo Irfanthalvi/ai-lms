@@ -49,7 +49,7 @@ const secondRowCards = [
 
 const Section2 = () => {
   return (
-    <section className="relative w-full py-38 px-6 bg-gradient-to-b from-card-foreground to-card text-white overflow-hidden">
+    <section id="How-it-works" className="relative w-full py-38 px-6 bg-gradient-to-b from-card-foreground to-card text-white overflow-hidden">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 pointer-events-none" />
 

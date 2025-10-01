@@ -6,7 +6,7 @@ import { ShieldCheck, Cpu, Settings, BarChart3 } from "lucide-react"; // icons
 
 const Section4 = () => {
   return (
-    <section className="w-full bg-[#0A1E28] text-white py-10 ">
+    <section id="Case-study" className="w-full bg-[#0A1E28] text-white py-10 ">
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 items-center pl-55">
 
         {/* LEFT CONTENT */}

@@ -45,7 +45,7 @@ const items = [
 
 const Section3 = () => {
     return (
-        <section className="w-full bg-white py-16">
+        <section id="industries" className="w-full bg-white py-16">
             <div className="max-w-6xl mx-auto px-4 text-center">
                 <h2 className="text-3xl font-bold leading-snug text-gray-900">
                     Built for every industry,

@@ -62,7 +62,7 @@
   --background: oklch(0.2161 0.0061 56.04 / 85.1%);            /* #1C1917 */ 
   --foreground: oklch(1 0 0);                          /* #FFFFFF */  
   
-    --primary: oklch(0.4883 0.0835 205.88);                /* #006D77 */
+    --primary: oklch(0.4883 0.0835 205.88);                /* button color */
   --primary-foreground: oklch(0.7772 0.0679 187.48);      /* #83C5BE */
 
 
@@ -80,8 +80,8 @@
   --muted: oklch(90% 0.01 95);                /* #D6D3D1 */
   --muted-foreground: oklch(55% 0.01 95);     /* #78716C */
 
-  --accent: oklch(75% 0.11 185);              /* #63B6AD */
-  --accent-foreground: oklch(18% 0.025 209);
+  --accent: oklch(0.9379 0.0696 202.73);              /* text color */
+  --accent-foreground: oklch(0.7772 0.0679 187.48);
 
   --destructive: oklch(55% 0.25 27);
   --border: oklch(0.9699 0.0013 106.42);
@@ -188,7 +188,9 @@
   html, body {
     overflow-y: auto;
     scrollbar-width: none;
+      scroll-behavior: smooth;
   }
+
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
     display: none;

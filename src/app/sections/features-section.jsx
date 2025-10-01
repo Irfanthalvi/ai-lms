@@ -8,7 +8,7 @@ import { featuresMock } from "../data/feature-data";
 
 const FeaturesSection = () => {
   return (
-    <section className="w-full bg-foreground text-background py-16 px-6">
+    <section id="Why-AiELM"   className="w-full bg-foreground text-background py-16 px-6">
       <div className="mx-auto text-center">
         {/* Heading + Paragraph */}
         <div className="mt-[90px] w-[776px] mx-auto text-center">

@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const navItems = [
-  { label: "Why AiELM", href: "#" },
-  { label: "How it works", href: "#" },
-  { label: "Industries", href: "#" },
-  { label: "Case study", href: "#" },
-  { label: "Solutions", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "Why AiELM", href: "#Why-AiELM" },
+  { label: "How it works", href: "#How-it-works" },
+  { label: "Industries", href: "#industries" },
+  { label: "Case study", href: "#Case-study" },
+  { label: "Solutions", href: "#Solutions" },
+  { label: "About Us", href: "#About-Us" },
 ];
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* Inner container */}
       <div className="w-full flex items-center justify-between gap-[60px] px-[225px]">
         {/* Logo */}
-        <Link href="/" className="flex items-center cursor-pointer">
+        <Link href="#hero-section" className="flex items-center cursor-pointer">
           <Image
             src="/logo-option-3.png"
             alt="AiELM Logo"
@@ -36,14 +36,16 @@ const Navbar = () => {
               key={index}
               href={item.href}
               className="px-4 py-2 text-[14.5px] rounded-md"
-              style={{ wordSpacing: "0.1em"}}
+              style={{ wordSpacing: "0.1em" }}
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <Button className="text-[14px] mt-[-1px]">Get In Touch</Button>
+        <Button className="text-[14px] mt-[-1px] hover:bg-accent-foreground">
+          Get In Touch
+        </Button>
 
       </div>
     </header>
