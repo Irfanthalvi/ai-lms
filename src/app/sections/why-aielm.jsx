@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { featuresMock } from "../data/feature-data";
 
-const FeaturesSection = () => {
+const Whyaielm = () => {
   return (
     <section id="Why-AiELM"   className="w-full bg-foreground text-background py-16 px-6">
       <div className="mx-auto text-center">
@@ -85,4 +85,4 @@ const FeaturesSection = () => {
   );
 };
 
-export default FeaturesSection;
+export default Whyaielm;
