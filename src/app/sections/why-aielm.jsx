@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { featuresMock } from "../data/feature-data";
+import { whyaielmMock } from "../data/why-aielm-mock";
 
 const Whyaielm = () => {
   return (
@@ -23,7 +23,7 @@ const Whyaielm = () => {
 
         {/* Cards */}
         <div className="w-full max-w-[1250px] mx-auto mt-15.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featuresMock.map((item, idx) => (
+          {whyaielmMock.map((item, idx) => (
             <Card
               key={idx}
               className="rounded-xl overflow-hidden flex flex-col h-[355px] w-full p-0"
