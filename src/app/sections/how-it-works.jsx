@@ -2,49 +2,7 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Workflow,
-  GraduationCap,
-  ClipboardList,
-  BarChart3,
-  ShieldCheck,
-} from "lucide-react";
-
-const firstRowCards = [
-  {
-    icon: <ShieldCheck className="size-5 text-black" />,
-    title: "Sign In & Verify – Start Secure, Stay Secure",
-    desc: "AiELM confirms identity and baseline focus through multi-modal biometrics like facial recognition, liveness checks, and behavioral patterns — ensuring training starts secure and compliant.",
-    footer: "No more guessing who’s really behind the screen.",
-  },
-  {
-    icon: <Workflow className="size-5 text-black" />,
-    title: "Engage & Track",
-    desc: "With eye-tracking, posture analysis, and micro-expressions, AiELM monitors attention and emotions continuously, giving a live live picture of learner engagement.",
-    footer: "See engagement in real time, not after the fact.",
-  },
-];
-
-const secondRowCards = [
-  {
-    icon: <GraduationCap className="size-5 text-black" />,
-    title: "Learn with Precision",
-    desc: "The AI tutor dynamically adjusts pace, tone, and difficulty — turning signs of boredom, fatigue, or confusion into personalized interventions for higher retention.",
-    footer: "Learning that adapts as fast as you do.",
-  },
-  {
-    icon: <ClipboardList className="size-5 text-black" />,
-    title: "View Insight",
-    desc: "Dashboards transform raw data into focus scores, confidence levels, and compliance metrics, providing both learners and managers with actionable feedback.",
-    footer: "Make each session count.",
-  },
-  {
-    icon: <BarChart3 className="size-5 text-black" />,
-    title: "Optimize & Scale",
-    desc: "AiELM’s predictive analytics suggest personalized training paths, efficiency benchmarks, and compliance updates, scaling impact from individuals to entire teams.",
-    footer: "Transform data into insights.",
-  },
-];
+import { firstRowCards, secondRowCards } from "../data/how-it-works-mock";
 
 const HowItWorks = () => {
   return (
@@ -67,34 +25,38 @@ const HowItWorks = () => {
           {firstRowCards.map((card, index) => (
             <Card
               key={index}
-              className="bg-black/80 border-0 rounded-xl shadow-lg w-[600px] h-[290px] pl-2 pt-8"
+              className="bg-black/80 border-0 rounded-xl w-[605px] h-[285px] pl-1.5 pt-7.5"
             >
-              <CardContent className=" flex flex-col items-start justify-center text-start gap-4">
-                <div className="size-10 flex items-center justify-center rounded-md bg-teal-500 mb-2">
+              <CardContent className=" flex flex-col items-start justify-center text-start">
+                <div className="size-10.5 flex items-center justify-center rounded-[8px] bg-teal-400 mb-5.5">
                   {card.icon}
                 </div>
-                <h3 className="font-semibold text-[22px] text-white">{card.title}</h3>
-                <p className="text-sm text-gray-300 pb-3">{card.desc}</p>
-                <p className="text-sm font-semibold text-teal-400 uppercase">{card.footer}</p>
+                <h3 className="font-semibold text-[22px] text-white pb-3.5">{card.title}</h3>
+                <p className="text-sm text-gray-300 leading-relaxed pb-6">{card.desc}</p>
+                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline ">
+                  {card.footer}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
 
         {/* Row 2 → 3 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-[38px] text-left max-w-[1250px] mx-auto mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-[38px] text-left max-w-[1250px] mx-auto mb-[72px] pt-2">
           {secondRowCards.map((card, index) => (
             <Card
               key={index}
-              className="bg-black/80 border-0 rounded-xl shadow-lg w-[390px] h-[310px] pl-2 pt-9"
+              className="bg-black/80 border-0 rounded-xl w-[390px] h-[310px] pl-2 pt-8"
             >
-              <CardContent className="flex flex-col items-start justify-center text-start gap-4 ">
-                <div className="size-10 flex items-center justify-center rounded-md bg-teal-500 mb-2">
+              <CardContent className="flex flex-col items-start justify-center text-start">
+                <div className="size-10 flex items-center justify-center rounded-md bg-teal-500 mb-5.5">
                   {card.icon}
                 </div>
-                <h3 className="font-semibold text-[22px] text-white">{card.title}</h3>
-                <p className="text-[14px] text-gray-300 pb-3 ">{card.desc}</p>
-                <p className="text-sm font-semibold text-teal-400 uppercase">{card.footer}</p>
+                <h3 className="font-semibold text-[22px] text-white pb-3.5">{card.title}</h3>
+                <p className="text-sm text-gray-300 leading-relaxed pb-6">{card.desc}</p>
+                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline ">
+                  {card.footer}
+                </p>
               </CardContent>
             </Card>
           ))}
