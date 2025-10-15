@@ -20,32 +20,32 @@ const Navbar = () => {
       {/* Inner container */}
       <div className="w-full flex items-center justify-between gap-[60px] px-[225px]">
         {/* Logo */}
-        <Link href="#hero-section" className="flex items-center cursor-pointer">
-          <Image
-            src="/logo-option-3.png"
-            alt="AiELM Logo"
-            width={129}
-            height={44}
-          />
-        </Link>
+        <div className="absolute top-1/2 left-57 -translate-y-1/2" style={{ zIndex: 10 }}>
+          <Link href="#hero-section" className="flex items-center cursor-pointer">
+            <Image src="/logo-option-3.png" alt="AiELM Logo" width={123} height={100} />
+          </Link>
+        </div>
 
-        {/* Nav Links (dynamic) */}
-        <nav className="flex items-center mt-[-1px] mr-[13px] space-x-2">
+        {/* Nav Links */}
+        <nav className="absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 flex space-x-4">
           {navItems.map((item, index) => (
             <Link
               key={index}
               href={item.href}
-              className="px-4 py-2 text-[14.5px] rounded-md"
-              style={{ wordSpacing: "0.1em" }}
+              className="px-3 text-[13.5px] tracking-[0.03em]  rounded-md "
+
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <Button className="text-[14px] mt-[-1px] hover:bg-accent-foreground">
-          Get In Touch
-        </Button>
+        {/* Button */}
+        <div className="absolute top-1/2 right-58 -translate-y-1/2">
+          <Button className="text-[14px] hover:bg-accent-foreground">
+            Get In Touch
+          </Button>
+        </div>
 
       </div>
     </header>
@@ -53,3 +53,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

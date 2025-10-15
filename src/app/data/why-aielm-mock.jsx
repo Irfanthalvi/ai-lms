@@ -1,5 +1,4 @@
-// src/app/mocks/featuresMock.js
-export const featuresMock = [
+export const aielm = [
   {
     img: "/picture.png",
     title: "Verified Learning",

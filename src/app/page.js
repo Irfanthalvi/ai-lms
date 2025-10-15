@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./sections/hero-section";
 import Whyaielm from "./sections/why-aielm";
 import HowItWorks from "./sections/how-it-works";
-import Section3 from "./sections/section-3";
+import Industries from "./sections/industries";
 import Section4 from "./sections/section-4";
 
 
@@ -12,7 +12,7 @@ const Page = () => {
 <Header/>
 <Whyaielm/>
 <HowItWorks/>
-<Section3/>
+<Industries/>
 <Section4/>
     </div>
   );

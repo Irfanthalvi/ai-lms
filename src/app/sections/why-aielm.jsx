@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { whyaielmMock } from "../data/why-aielm-mock";
+import { aielm } from "../data/why-aielm-mock";
 
 const Whyaielm = () => {
   return (
@@ -12,21 +12,21 @@ const Whyaielm = () => {
       <div className="mx-auto text-center">
         {/* Heading + Paragraph */}
         <div className="mt-[90px] w-[776px] mx-auto text-center">
-          <h2 className="font-bold text-[38px] leading-[120%] text-secondary-foreground mb-4">
+          <h2 className="font-bold text-[38px] leading-[120%] text-secondary-foreground mb-[14px]">
             Why leading enterprises choose <span className="text-primary">AiELM</span>
           </h2>
-          <p className="font-normal text-[16px] leading-[24px] text-secondary-foreground">
+          <p className="font-normal text-[16px] tracking-[0.009em] text-secondary-foreground">
             Reimagine corporate training—not just completed, but optimized. AiELM isn’t just a learning
             management system. It’s your operational efficiency engine.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="w-full max-w-[1250px] mx-auto mt-15.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {whyaielmMock.map((item, idx) => (
+        <div className="w-full max-w-[1250px] mx-auto mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {aielm.map((item, idx) => (
             <Card
               key={idx}
-              className="rounded-xl overflow-hidden flex flex-col h-[355px] w-full p-0"
+              className="rounded-xl overflow-hidden flex flex-col h-[358px] w-full p-0"
               style={{
                 background:
                   "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
@@ -38,7 +38,7 @@ const Whyaielm = () => {
                   src={item.img}
                   alt={item.title || "Section image"}
                   fill
-                  className="object-cover object-center rounded"
+                  className="object-cover h-full object-center rounded-sm"
                 />
               </div>
 

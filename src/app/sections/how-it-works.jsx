@@ -16,7 +16,7 @@ const HowItWorks = () => {
           How it works: <span className="text-teal-400">From start to smart</span>
         </h2>
         <p className="mx-auto text-base md:text-[16.5px] text-gray-300 mb-14">
-          Behind every training session, AiELM runs a powerful, intelligent
+          Behind every training session,AiELM runs a powerful, intelligent
           workflow designed to verify,<br /> adapt, measure, and optimize — all in real
           time. Here’s what that journey looks like:
         </p>
@@ -28,12 +28,12 @@ const HowItWorks = () => {
               className="bg-black/80 border-0 rounded-xl w-[605px] h-[285px] pl-1.5 pt-7.5"
             >
               <CardContent className=" flex flex-col items-start justify-center text-start">
-                <div className="size-10.5 flex items-center justify-center rounded-[8px] bg-teal-400 mb-5.5">
+                <div className="size-10.5 flex items-center justify-center rounded-[8px] bg-teal-400 mb-6">
                   {card.icon}
                 </div>
-                <h3 className="font-semibold text-[22px] text-white pb-3.5">{card.title}</h3>
-                <p className="text-sm text-gray-300 leading-relaxed pb-6">{card.desc}</p>
-                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline ">
+                <h3 className="font-semibold text-[23px] tracking-normal text-white pb-3">{card.title}</h3>
+                <p className="text-[14px] text-gray-300 leading-relaxed tracking-[0.013em] pb-6">{card.desc}</p>
+                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline tracking-[0.032em] ">
                   {card.footer}
                 </p>
               </CardContent>

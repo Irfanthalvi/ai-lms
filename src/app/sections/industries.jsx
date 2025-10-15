@@ -43,54 +43,54 @@ const items = [
     },
 ];
 
-const Section3 = () => {
+const Industries = () => {
     return (
-        <section id="industries" className="w-full bg-white py-16">
-            <div className="max-w-6xl mx-auto px-4 text-center">
-                <h2 className="text-3xl font-bold leading-snug text-gray-900">
+        <section id="industries" className="w-full bg-white py-39">
+            <div className="px-4 text-center">
+                <h2 className="text-[43.5px] font-bold leading-[1.01] tracking-wide text-gray-900">
                     Built for every industry,
                     <br />
-                    <span className="text-teal-600">Designed for impact</span>
+                    <span className="text-teal-700">Designed for impact</span>
                 </h2>
 
-                <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-base leading-relaxed">
+                <p className="mt-10 text-black text-[17px] leading-[1.3] -tracking-[0.021em]">
                     Whether it’s healthcare, finance, manufacturing, or retail, AELEM adapts
-                    to the unique compliance demands, workforce challenges, and growth
-                    opportunities of your industry. Our platform ensures learning is relevant,
+                    to the unique compliance <br />demands, workforce challenges, and growth
+                    opportunities of your industry. Our platform ensures<br /> learning is relevant,
                     measurable, and future-proof across sectors.
                 </p>
 
-                <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-9.5 max-w-[1250px] mx-auto border grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {items.map((item, idx) => (
                         <Card
                             key={idx}
-                            className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col h-[417px] " // total height set karo
+                            className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col h-[427px] "
                             style={{
                                 background:
                                     "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
                             }}
                         >
-                            {/* Image = 70% height */}
                             <div className="relative w-full flex-[0_0_60%]">
                                 <Image
                                     src={item.img}
-                                    alt={item.title || "Section image"} // ✅ added alt text
+                                    alt={item.title || "Section image"}
                                     fill
-                                    className="object-cover rounded-xl"
+                                    className="object-cover rounded-sm"
                                 />
                             </div>
 
                             {/* Content = 30% height */}
-                            <CardContent className="flex-[0_0_20%] flex flex-col justify-center">
+                            <CardContent className="flex-[0_0_20%] flex flex-col items-start">
                                 <p className="uppercase text-[12px] font-semibold text-[#006D77] mb-1">
                                     {item.note}
                                 </p>
                                 <h3 className="text-[20px] font-semibold text-[#0A0A0A] mb-1">
                                     {item.title}
                                 </h3>
-                                <p className="text-[15px] leading-6 text-[#0A0A0A]">
+                                <p className="text-[14px] text-left text-[#0A0A0A] leading-6">
                                     {item.desc}
                                 </p>
+
                             </CardContent>
                         </Card>
                     ))}
@@ -101,4 +101,4 @@ const Section3 = () => {
     );
 };
 
-export default Section3;
+export default Industries;
