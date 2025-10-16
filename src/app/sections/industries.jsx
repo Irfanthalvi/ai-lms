@@ -7,38 +7,38 @@ import { Card, CardContent } from "@/components/ui/card";
 const items = [
     {
         title: "Healthcare",
-        desc: "AELEM drives efficient, adaptive learning that enhances clinical precision and patient experience.",
-        note: "Compliance and care, hand in hand",
+        desc: "AiELM offers secure, adaptive learning that enhances clinical precision and patient experience.",
+        note: "Compliance and care, hand in hand.",
         img: "/Healthcare.png",
     },
     {
         title: "Transportation & Logistics",
-        desc: "AELEM makes FMCSA & DOT audits easier, offering driver training & solutions to improve fleet performance.",
-        note: "Drive compliance, safety, and efficiency",
+        desc: "AiELM meets FMCSA and DOT rules, offering driver training & analytics to improve fleet performance.",
+        note: "Drive compliance, safety, and efficiency forward.",
         img: "/Transportation.png",
     },
     {
         title: "Manufacturing",
-        desc: "Engagement tracking prevents accidents and inefficiencies, making safety a top metric .",
-        note: "Precision meets safety",
+        desc: "Engagement tracking prevents accidents and inefficiencies, while training adapts to needs.",
+        note: "Safer teams, smarter operations.",
         img: "/Manufacturing.png",
     },
     {
         title: "Finance",
-        desc: "Automate updates for SEC, FINRA, GDPR, and maintain audit-proof records with AELEM’s risk management.",
-        note: "Stay compliant, stay competitive",
+        desc: "Automate updates for SEC, FINRA, GDPR, and empower teams with fraud detection and risk management.",
+        note: "Stay compliant. Stay competitive.",
         img: "/Finance.png",
     },
     {
         title: "Education",
-        desc: "AELEM provides personalized learning, adaptive assessments, and advanced analytics for educators.",
-        note: "Shape success, harness technology",
+        desc: "AiELM offers personalized learning, adaptive assessments, and analytics to enhance student outcomes and efficiency.",
+        note: "Shaping smarter learning for tomorrow.",
         img: "/Education.png",
     },
     {
         title: "Retail & Services",
-        desc: "AELEM keeps retail teams focused on consistent execution, compliance, and customer experience standards.",
-        note: "Turn compliance into service excellence",
+        desc: "Provide teams with training focused on emotional intelligence, including seasonal modules on trends and challenges, plus compliance onboarding.",
+        note: "Turn customer interactions into brand loyalty.",
         img: "/Services.png",
     },
 ];
@@ -60,17 +60,19 @@ const Industries = () => {
                     measurable, and future-proof across sectors.
                 </p>
 
-                <div className="mt-9.5 max-w-[1250px] mx-auto border grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-9.5 max-w-[1250px] mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {items.map((item, idx) => (
                         <Card
                             key={idx}
-                            className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col h-[427px] "
+                            className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col"
                             style={{
-                                background:
-                                    "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
+                                height: "427px",  // total card height
+                                width: "100%",    // full width of the grid cell
+                                background: "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
                             }}
                         >
-                            <div className="relative w-full flex-[0_0_60%]">
+                            {/* Image section: 60% of card height */}
+                            <div className="relative w-full" style={{ height: "60%" }}>
                                 <Image
                                     src={item.img}
                                     alt={item.title || "Section image"}
@@ -79,8 +81,8 @@ const Industries = () => {
                                 />
                             </div>
 
-                            {/* Content = 30% height */}
-                            <CardContent className="flex-[0_0_20%] flex flex-col items-start">
+                            {/* Content section: 40% of card height */}
+                            <CardContent style={{ height: "40%" }} className="flex flex-col justify-start p-4">
                                 <p className="uppercase text-[12px] font-semibold text-[#006D77] mb-1">
                                     {item.note}
                                 </p>
@@ -90,9 +92,9 @@ const Industries = () => {
                                 <p className="text-[14px] text-left text-[#0A0A0A] leading-6">
                                     {item.desc}
                                 </p>
-
                             </CardContent>
                         </Card>
+
                     ))}
                 </div>
 

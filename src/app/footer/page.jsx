@@ -13,7 +13,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-foreground text-[14px]">
+    <footer className="w-full bg-background text-[14px]">
       <div className="mx-auto max-w-[1500px] px-2 lg:px-[190px] py-4 space-y-10">
         {/* === Row 1: Logo + Nav === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
