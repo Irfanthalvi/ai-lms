@@ -18,7 +18,7 @@ export default function AboutSection() {
     const CTA_BG = "#0F1F1D";
 
     return (
-        <section
+        <section id="About-Us"
             style={{
                 background: "rgba(224, 247, 244, 0.99)",
             }}

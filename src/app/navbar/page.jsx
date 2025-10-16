@@ -42,9 +42,11 @@ const Navbar = () => {
 
         {/* Button */}
         <div className="absolute top-1/2 right-58 -translate-y-1/2">
-          <Button className="text-[14px] hover:bg-accent-foreground">
-            Get In Touch
-          </Button>
+          <a href="#contact">
+            <Button href="#contact" className="text-[14px] hover:bg-accent-foreground">
+              Get In Touch
+            </Button>
+          </a>
         </div>
 
       </div>

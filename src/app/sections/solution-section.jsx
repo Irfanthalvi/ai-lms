@@ -26,7 +26,7 @@ export default function SolutionSection() {
   const HEADING = "#111827"; // almost-black for headings
 
   return (
-    <section className="w-full bg-white px-6 md:px-16 py-20">
+    <section id="Solutions" className="w-full bg-white px-6 md:px-16 py-20">
       <div className="max-w-4xl mx-auto text-center">
         <h2
           className="text-[26px] md:text-[30px] font-extrabold"

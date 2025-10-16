@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen relative w-full overflow-hidden">
+    <section id="contact" className="min-h-screen relative w-full overflow-hidden">
       <Toaster position="top-center" reverseOrder={false} />
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
