@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import toast, { Toaster } from "react-hot-toast";
 
-// ✅ Zod validation schema
+// ✅ Zod Schema
 const contactSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
@@ -25,6 +25,16 @@ const contactSchema = z.object({
     message: "You must agree to the Privacy Policy",
   }),
 });
+
+// ✅ Dynamic field configuration
+const formFields = [
+  { name: "firstName", label: "First Name", placeholder: "Enter your first name", type: "text", col: 2 },
+  { name: "lastName", label: "Last Name", placeholder: "Enter your last name", type: "text", col: 2 },
+  { name: "businessEmail", label: "Business Email", placeholder: "Enter your business email", type: "email", col: 2 },
+  { name: "contactNumber", label: "Contact Number", placeholder: "Enter your contact number", type: "text", col: 2 },
+  { name: "industry", label: "Industry", placeholder: "Enter your industry", type: "text", col: 2 },
+  { name: "companyName", label: "Company Name", placeholder: "Enter your company name", type: "text", col: 2 },
+];
 
 export default function Contact() {
   const {
@@ -40,13 +50,13 @@ export default function Contact() {
   const onSubmit = (data) => {
     console.log("✅ Submitted data:", data);
     toast.success("Form submitted successfully!");
-    reset(); // reset form after success
+    reset();
   };
 
   return (
     <section id="contact" className="min-h-screen relative w-full overflow-hidden">
-      <Toaster position="top-center" reverseOrder={false} />
-      {/* Background Image */}
+      <Toaster position="top-center" />
+      {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/contact background.png"
@@ -57,136 +67,60 @@ export default function Contact() {
         />
       </div>
 
-      {/* Main Content */}
-      <div className="flex justify-center py-16 px-4">
-        <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Text Section */}
-          <div className="flex flex-col justify-center">
+      <div className="flex justify-center py-29 px-4">
+        <div className="w-[1240px] grid grid-cols-1 lg:grid-cols-2">
+          {/* Left Side */}
+          <div className="flex flex-col">
             <Button
               variant="default"
-              className="w-fit bg-[#004C46] hover:bg-[#003C38] text-white px-4 py-1 rounded-full text-sm mb-4 shadow-md"
+              className="w-fit h-[30px] bg-[#004C46] hover:bg-[#003C38] text-white px-4 rounded-full text-sm mb-7 shadow-md"
             >
               Get In Touch
             </Button>
 
-            <h1 className="text-4xl font-bold text-[#0A0A0A] mb-4 leading-snug">
-              Let’s Build the Future of Learning Together
+            <h1 className="text-[45px] font-bold text-[#0A0A0A] mb-3 leading-[1.1]">
+              Let’s Build the Future<br/> of Learning Together
             </h1>
 
-            <p className="text-gray-800 text-base leading-relaxed">
-              Have a question? Curious about how AiELM can transform compliance,
-              training, or workforce efficiency in your organization? We’d love
-              to hear from you. Fill out the form below and our team will get
+            <p className="text-gray-800 text-[17px] leading-[1.4] tracking-wide font-semibold">
+              Have a question? Curious about how AiELM can<br/> transform compliance,
+              training, or workforce efficiency in <br/>your organization? We’d love
+              to hear from you. Fill out the<br/> form below and our team will get
               back to you shortly.
             </p>
           </div>
 
-          {/* Right Form Section */}
+          {/* Right Form */}
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="bg-[#F1F6F5] p-8 rounded-2xl shadow-lg backdrop-blur-sm space-y-5 text-black"
+            className="bg-[#eef6f4] border border-[#c8d4d2] p-8 rounded-4xl shadow-4xl backdrop-blur-sm space-y-5 text-black ml-[-65px]"
           >
-            {/* Row 1 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <Label className="text-black mb-2 block">First Name</Label>
-                <Input
-                  type="text"
-                  placeholder="Enter your first name"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("firstName")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.firstName?.message}
-                </p>
-              </div>
-
-              <div>
-                <Label className="text-black mb-2 block">Last Name</Label>
-                <Input
-                  type="text"
-                  placeholder="Enter your last name"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("lastName")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.lastName?.message}
-                </p>
-              </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <Label className="text-black mb-2 block">Business Email</Label>
-                <Input
-                  type="email"
-                  placeholder="Enter your business email"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("businessEmail")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.businessEmail?.message}
-                </p>
-              </div>
-
-              <div>
-                <Label className="text-black mb-2 block">Contact Number</Label>
-                <Input
-                  type="text"
-                  placeholder="Enter your contact number"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("contactNumber")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.contactNumber?.message}
-                </p>
-              </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <Label className="text-black mb-2 block">Industry</Label>
-                <Input
-                  type="text"
-                  placeholder="Enter your industry"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("industry")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.industry?.message}
-                </p>
-              </div>
-
-              <div>
-                <Label className="text-black mb-2 block">Company Name</Label>
-                <Input
-                  type="text"
-                  placeholder="Enter your company name"
-                  className="text-black placeholder-gray-600 border-gray-300"
-                  {...register("companyName")}
-                />
-                <p className="text-red-500 text-xs h-4 mt-1">
-                  {errors.companyName?.message}
-                </p>
-              </div>
+            {/* Map dynamic fields */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+              {formFields.map((field) => (
+                <div key={field.name} className={field.col === 1 ? "md:col-span-2" : ""}>
+                  <Label className="text-black mb-3 block">{field.label}</Label>
+                  <Input
+                    type={field.type}
+                    placeholder={field.placeholder}
+                    className="text-black placeholder-gray-600 bg-white border-gray-300"
+                    {...register(field.name)}
+                  />
+                  <p className="text-red-500 text-xs h-4 mt-1">{errors[field.name]?.message}</p>
+                </div>
+              ))}
             </div>
 
             {/* Message */}
             <div>
-              <Label className="text-black mb-2 block">
-                How can we help you today?
-              </Label>
+              <Label className="text-black mb-3 block">How can we help you today?</Label>
               <Textarea
                 placeholder="Start typing your message here"
-                rows={4}
-                className="text-black placeholder-gray-600 border-gray-300"
+                rows={6}
+                className="text-black bg-white placeholder-gray-600 border-gray-300 h-[110px]"
                 {...register("message")}
               />
-              <p className="text-red-500 text-xs h-4 mt-1">
-                {errors.message?.message}
-              </p>
+              <p className="text-red-500 text-xs  mt-1">{errors.message?.message}</p>
             </div>
 
             {/* Checkbox */}
@@ -197,9 +131,7 @@ export default function Contact() {
                 render={({ field }) => (
                   <Checkbox
                     checked={field.value || false}
-                    onCheckedChange={(checked) =>
-                      field.onChange(checked === true)
-                    }
+                    onCheckedChange={(checked) => field.onChange(checked === true)}
                   />
                 )}
               />
@@ -211,14 +143,12 @@ export default function Contact() {
                 and to receive emails from AiELM.
               </Label>
             </div>
-            <p className="text-red-500 text-xs h-4 mt-1">
-              {errors.agree?.message}
-            </p>
+            <p className="text-red-500 text-xs mt-1">{errors.agree?.message}</p>
 
             {/* Submit */}
             <Button
               type="submit"
-              className="w-full bg-[#004C46] hover:bg-[#003C38] text-white font-medium mt-4"
+              className="w-fit bg-[#004C46] hover:bg-[#003C38] text-white font-medium mt-4"
             >
               Submit
             </Button>
