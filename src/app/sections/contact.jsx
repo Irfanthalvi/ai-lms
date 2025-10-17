@@ -4,37 +4,15 @@ import React from "react";
 import Image from "next/image";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import toast, { Toaster } from "react-hot-toast";
+import { formFields } from "../data/contact-mock";
+import { contactSchema } from "../validation/contact-validation";
 
-// ✅ Zod Schema
-const contactSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  businessEmail: z.string().email("Invalid email"),
-  contactNumber: z.string().min(1, "Contact number is required"),
-  industry: z.string().min(1, "Industry is required"),
-  companyName: z.string().min(1, "Company name is required"),
-  message: z.string().min(1, "Message is required"),
-  agree: z.boolean().refine((val) => val === true, {
-    message: "You must agree to the Privacy Policy",
-  }),
-});
-
-// ✅ Dynamic field configuration
-const formFields = [
-  { name: "firstName", label: "First Name", placeholder: "Enter your first name", type: "text", col: 2 },
-  { name: "lastName", label: "Last Name", placeholder: "Enter your last name", type: "text", col: 2 },
-  { name: "businessEmail", label: "Business Email", placeholder: "Enter your business email", type: "email", col: 2 },
-  { name: "contactNumber", label: "Contact Number", placeholder: "Enter your contact number", type: "text", col: 2 },
-  { name: "industry", label: "Industry", placeholder: "Enter your industry", type: "text", col: 2 },
-  { name: "companyName", label: "Company Name", placeholder: "Enter your company name", type: "text", col: 2 },
-];
 
 export default function Contact() {
   const {
@@ -59,7 +37,7 @@ export default function Contact() {
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/contact background.png"
+          src="/images/contact background.png"
           alt="Contact background"
           fill
           priority

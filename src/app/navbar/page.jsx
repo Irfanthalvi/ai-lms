@@ -4,15 +4,9 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { navItems } from "../data/navbar-mock";
 
-const navItems = [
-  { label: "Why AiELM", href: "#Why-AiELM" },
-  { label: "How it works", href: "#How-it-works" },
-  { label: "Industries", href: "#industries" },
-  { label: "Case study", href: "#Case-study" },
-  { label: "Solutions", href: "#Solutions" },
-  { label: "About Us", href: "#About-Us" },
-];
+
 
 const Navbar = () => {
   return (
@@ -22,7 +16,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="absolute top-1/2 left-57 -translate-y-1/2" style={{ zIndex: 10 }}>
           <Link href="#hero-section" className="flex items-center cursor-pointer">
-            <Image src="/logo-option-3.png" alt="AiELM Logo" width={123} height={100} />
+            <Image src="/images/header-footer-logo.png" alt="AiELM Logo" width={123} height={100} />
           </Link>
         </div>
 
