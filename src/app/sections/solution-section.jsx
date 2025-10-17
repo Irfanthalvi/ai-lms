@@ -26,32 +26,32 @@ export default function SolutionSection() {
     {
       icon: "ShieldCheck",
       title: "AI-Speech Recognition",
-      desc: "Built-in speech recognition enables real-time language understanding, machine learning, and interactive transcription for next-level automation.",
+      desc: `Built-in speech recognition enables real-time <br /> language proficiency testing, adaptive <br/> learning, and conversational AI tutors that <br/> engage every learner.`,
     },
     {
       icon: "Eye",
       title: "Vision Capabilities",
-      desc: "Through facial recognition, eye-tracking, and deep-scene awareness, AiELM understands workflows and ensures visual intelligence integration.",
+      desc: "Through facial recognition, eye-tracking, and <br/> micro-expression analysis, AiELM provides <br/> deep insights into focus, engagement, and <br/> learner behavior.",
     },
     {
       icon: "Server",
       title: "Seamless API Integrations",
-      desc: "AiELM connects effortlessly with HRIS, CRM, LMS, and other enterprise systems, ensuring automation across diverse workflows.",
+      desc: "AiELM connects effortlessly with HRIS, ERP, <br/> LMS, and compliance systems, ensuring <br/> smooth workflows and data flow across your <br/> enterprise.",
     },
   ];
 
   const features = [
     {
       label: "Trusted Authentication:",
-      desc: "With multi- modal biometrics and continuous  identity checks, AiELM guarantees workflow learning assurance that meets the compliance standards.",
+      desc: "With multi-<br/> modal biometrics and continuous<br/> identity checks, AiELM guarantees <br/> secure, verified learning sessions that <br/> meet the compliance standards.",
     },
     {
       label: "Real-Time Data:",
-      desc: "AiELM captures and processes data live, delivering instant calibration, compliance alerts, and actionable insights when you need them most.",
+      desc: "AiELM captures and<br/> processes data live, delivering instant<br/> dashboards, compliance alerts, and<br/> actionable insights when you need<br/> them most.",
     },
     {
       label: "Predictive Analytics:",
-      desc: "Powered by AI models, AiELM predicts training outcomes, workflow risks, and compliance variations, turning learning into a strategic advantage.",
+      desc: "Powered by AI<br/> models, AiELM predicts training<br/> outcomes, workforce risks, and<br/> efficiency gains, turning learning into a<br/> strategic advantage.",
     },
   ];
 
@@ -77,7 +77,7 @@ export default function SolutionSection() {
           return (
             <Card
               key={i}
-              className="rounded-2xl h-[296px] w-[390px] shadow-sm border border-transparent bg-[#eefcf9]"
+              className="rounded-2xl h-[296px] w-[390px] border border-transparent bg-[#eefcf9]"
             >
               <CardContent className="p-4 md:p-4">
                 <div className="flex flex-col items-center">
@@ -88,9 +88,11 @@ export default function SolutionSection() {
                   <h3 className="text-[22px] md:text-[23px] font-semibold mb-2 text-[#111827]">
                     {item.title}
                   </h3>
-                  <p className="text-[14px] text-center mb-5 max-w-[320px] leading-relaxed text-[#0b0b0b]">
-                    {item.desc}
-                  </p>
+                  <p
+                    className="text-[14px] text-center mb-5 max-w-[320px] leading-relaxed text-[#0b0b0b]"
+                    dangerouslySetInnerHTML={{ __html: item.desc }}
+                  />
+
                 </div>
               </CardContent>
             </Card>
@@ -106,13 +108,14 @@ export default function SolutionSection() {
               <CheckCircle className="w-5 h-5 text-[#0F8F85]" />
             </div>
             <div className="w-full">
-              <p className="text-[18px] leading-snug text-[#020202]">
-                <span className="font-semibold text-[#0F8F85]">
-                  {feature.label}
-                </span>{" "}
-                {feature.desc}
-              </p>
+              <p
+                className="text-[18px] leading-snug text-[#020202]"
+                dangerouslySetInnerHTML={{
+                  __html: `<span class='font-semibold text-[#0F8F85]'>${feature.label}</span> ${feature.desc}`,
+                }}
+              />
             </div>
+
           </div>
         ))}
       </div>
