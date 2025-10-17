@@ -1,12 +1,9 @@
-// app/components/SolutionSection.tsx
 "use client";
 
 import React from "react";
 import {CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { features, mainTitle } from "../data/case-study-mock";
-import { cards, description1, description2, highlight, icons } from "../data/solution-mock";
-
+import { cards, description1, description2, features, highlight, icons, mainTitle } from "../data/solution-mock";
 
 export default function SolutionSection() {
 
