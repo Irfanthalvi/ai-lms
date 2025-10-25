@@ -52,7 +52,7 @@ const Casestudy = () => {
 
         {/* RIGHT CONTENT */}
         <div className="flex justify-end items-center w-full lg:static lg:translate-y-0 absolute right-0 top-1/2 -translate-y-1/2">
-          <div className="w-[900px] h-[900px] overflow-hidden flex justify-end max-xl:hidden">
+          <div className="w-[900px] h-[900px] overflow-hidden flex justify-end">
             <Image
               src={imageSrc}
               alt={imageAlt}
