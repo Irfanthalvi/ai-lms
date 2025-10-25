@@ -19,40 +19,156 @@ const Casestudy = () => {
   return (
     <section
       id="Case-study"
-      className="relative flex w-full bg-[#0A1E28] text-white py-37 overflow-visible"
+      className="
+        relative 
+        flex 
+        w-full 
+        bg-[#0A1E28] 
+        text-white 
+        py-36 
+        overflow-visible 
+        max-lg:flex-col-reverse
+      "
     >
+      {/* RIGHT IMAGE */}
+      <div
+        className="
+          absolute 
+          top-[63px]
+          max-xl:-top-15
+          right-0 
+          bottom-0
+          z-0
+          flex 
+          justify-end    
+          items-center
+          w-[787px] 
+          h-[1000px]
+          max-2xl:w-[650px]
+          max-xl:w-[530px] 
+          max-lg:static
+          max-lg:w-full 
+          max-lg:h-auto
+          max-md:static
+          max-md:w-full
+          max-md:h-auto
+          max-sm:static
+        "
+      >
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          width={1500}
+          height={1000}
+          className="
+            object-contain 
+            w-auto 
+            h-full 
+            rounded-md 
+            shadow-lg 
+            max-lg:h-auto 
+            max-lg:rounded-none
+            max-md:h-auto
+          "
+        />
+      </div>
+
       {/* LEFT CONTENT */}
       <div
         className="
           relative z-10 
-          ml-57
+          ml-56
           w-[700px] 
           pt-1
           min-h-[600px] 
+          max-2xl:ml-36
+          max-xl:ml-2
+          max-lg:ml-20
+          max-md:ml-12
+          max-md:w-[90%]
         "
       >
-        <h2 className="text-[38px] max-lg:text-4xl font-bold leading-[1.2] mb-4">
+        {/* Heading */}
+        <h2 className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[22px] font-bold leading-[1.2] mb-6">
           {mainTitle}
           <br />
           {systemTitle} <span className="text-[#4FD1C5]">{highlighted}</span>
         </h2>
 
+        {/* Intro Text */}
         <p
-          className="text-gray-300 mb-10 text-[16px] leading-[1.5]"
+          className="
+            text-gray-300 
+            mb-10 
+            text-[16px] 
+            leading-[1.6]
+            max-xl:text-[12px] 
+            max-lg:text-[13.5px] 
+            max-md:text-[13px]
+            max-sm:text-[12.5px]
+          "
           dangerouslySetInnerHTML={{ __html: introText }}
         />
+
         {/* Features */}
-        <div className="grid sm:grid-cols-2 gap-x-3 gap-y-18 mb-20">
+        <div
+          className="
+            grid 
+            sm:grid-cols-2 
+            gap-x-6 
+            gap-y-14 
+            mb-20
+            max-2xl:gap-x-5
+            max-xl:gap-x-0
+            max-lg:gap-x-2 
+            max-md:gap-x-1.5 
+            max-sm:grid-cols-1 
+            max-sm:gap-y-10
+          "
+        >
           {features.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={index} className="flex items-start gap-5">
-                <Icon className="size-8 text-[#4FD1C5] shrink-0" />
+              <div
+                key={index}
+                className="
+                  flex 
+                  items-start 
+                  gap-5
+                  max-xl:gap-2 
+                  max-lg:gap-3 
+                  max-md:gap-2.5
+                "
+              >
+                <Icon className="size-8 text-[#4FD1C5] shrink-0 max-xl:size-4 max-lg:size-6 max-md:size-5 max-sm:size-5" />
                 <div>
-                  <h3 className="text-gray-200 font-semibold mb-3 text-[19px]">
+                  <h3
+                    className="
+                      text-gray-200 
+                      font-semibold 
+                      mb-2 
+                      text-[19px]
+                      max-xl:text-[12px]
+                      max-lg:text-[16px]
+                      max-md:text-[15px]
+                      max-sm:text-[14px]
+                    "
+                  >
                     {item.title}
                   </h3>
-                  <p className="text-gray-200 text-[15px] leading-[1.5] tracking-[0.04em] whitespace-pre-line">
+                  <p
+                    className="
+                      text-gray-300 
+                      text-[15px] 
+                      leading-[1.5] 
+                      tracking-[0.03em]
+                      whitespace-pre-line 
+                      max-xl:text-[9px] 
+                      max-lg:text-[13px] 
+                      max-md:text-[12.5px] 
+                      max-sm:leading-[1.6]
+                    "
+                  >
                     {item.desc}
                   </p>
                 </div>
@@ -62,37 +178,58 @@ const Casestudy = () => {
         </div>
 
         {/* CTA */}
-        <div>
-          <p className="text-gray-200 text-[17px] leading-[1.4] text-bold">{ctaText1}</p>
-          <p className="text-gray-200 text-[17px] leading-[1.4] text-bold">{ctaText2}</p>
-          <button className="mt-6 p-2 bg-[#18a897] font-medium rounded-md transition">
+        <div className="text-gray-200">
+          <p
+            className="
+              text-[17px] 
+              leading-[1.4] 
+              font-semibold 
+              max-xl:text-[12px] 
+              max-lg:text-[14px] 
+              max-md:text-[13.5px]
+              max-sm:text-[8px]
+            "
+          >
+            {ctaText1}
+          </p>
+          <p
+            className="
+              text-[17px] 
+              leading-[1.4] 
+              font-semibold 
+              mt-1
+              max-xl:text-[12px] 
+              max-lg:text-[14px] 
+              max-md:text-[13.5px]
+              max-sm:text-[8px]
+            "
+          >
+            {ctaText2}
+          </p>
+
+          <button
+            className="
+              mt-6 
+              px-6 
+              py-2.5 
+              max-lg:mb-10
+              bg-[#18a897] 
+              hover:bg-[#139183]
+              text-white 
+              text-[15px] 
+              font-medium 
+              rounded-md 
+              transition-all 
+              duration-300 
+              shadow-md 
+              max-md:mt-4 
+              max-md:px-5 
+              max-md:py-2
+            "
+          >
             {ctaButton}
           </button>
         </div>
-      </div>
-
-      {/* RIGHT IMAGE (pinned to right edge) */}
-      <div
-        className="
-          absolute 
-          top-[63px] 
-          right-0 
-          bottom-0
-          z-0
-          w-[787px]     /* 👈 adjust right width */
-          h-[1000px]     /* 👈 adjust right height */
-          flex 
-          justify-end     /* 👈 aligns image to right edge */
-          items-center
-        "
-      >
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={1500}
-          height={1000}
-          className="object-contain w-auto h-full rounded-md shadow-lg"
-        />
       </div>
     </section>
   );
