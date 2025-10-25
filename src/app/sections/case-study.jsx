@@ -25,7 +25,7 @@ const Casestudy = () => {
         w-full 
         bg-[#0A1E28] 
         text-white 
-        py-36 
+        py-37 
         overflow-visible 
         max-lg:flex-col-reverse
       "
@@ -89,7 +89,7 @@ const Casestudy = () => {
         "
       >
         {/* Heading */}
-        <h2 className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[22px] font-bold leading-[1.2] mb-6">
+        <h2 className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[22px] pl-1 font-bold leading-[1.2] mb-4">
           {mainTitle}
           <br />
           {systemTitle} <span className="text-[#4FD1C5]">{highlighted}</span>
@@ -99,9 +99,11 @@ const Casestudy = () => {
         <p
           className="
             text-gray-300 
+            pl-1
             mb-10 
             text-[16px] 
-            leading-[1.6]
+            tracking-[0.01em]
+            leading-[1.4]
             max-xl:text-[12px] 
             max-lg:text-[13.5px] 
             max-md:text-[13px]
@@ -115,8 +117,8 @@ const Casestudy = () => {
           className="
             grid 
             sm:grid-cols-2 
-            gap-x-6 
-            gap-y-14 
+            gap-x-2 
+            gap-y-16 
             mb-20
             max-2xl:gap-x-5
             max-xl:gap-x-0
@@ -134,7 +136,7 @@ const Casestudy = () => {
                 className="
                   flex 
                   items-start 
-                  gap-5
+                  gap-6.5
                   max-xl:gap-2 
                   max-lg:gap-3 
                   max-md:gap-2.5
@@ -146,7 +148,7 @@ const Casestudy = () => {
                     className="
                       text-gray-200 
                       font-semibold 
-                      mb-2 
+                      mb-3.5 
                       text-[19px]
                       max-xl:text-[12px]
                       max-lg:text-[16px]
@@ -159,9 +161,9 @@ const Casestudy = () => {
                   <p
                     className="
                       text-gray-300 
-                      text-[15px] 
+                      text-[16px] 
                       leading-[1.5] 
-                      tracking-[0.03em]
+                      tracking-[0.02em]
                       whitespace-pre-line 
                       max-xl:text-[9px] 
                       max-lg:text-[13px] 
