@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 z-50 w-full h-[65px] bg-background backdrop-blur-xl border-b border-border/5 flex items-center justify-center">
       <div className="w-full flex items-center justify-between gap-[60px] px-[225px] relative">
         {/* Logo */}
-        <div className="absolute top-1/2 left-57 -translate-y-1/2 z-10">
+        <div className="absolute top-1/2 left-57 max-xl:left-5 -translate-y-1/2 z-10">
           <Link href="#hero-section" className="flex items-center cursor-pointer">
             <Image src="/images/header-footer-logo.png" alt="AiELM Logo" width={123} height={100} />
           </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="px-3 text-[13.5px] tracking-[0.03em] rounded-md hover:bg-accent/10"
+              className="px-3 text-[13.5px] tracking-[0.03em] rounded-md"
             >
               {item.label}
             </Link>
