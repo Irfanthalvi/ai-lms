@@ -8,16 +8,49 @@ import { aielm } from "../data/why-aielm-mock";
 
 const Whyaielm = () => {
   return (
-    <section id="Why-AiELM"   className="w-full bg-foreground text-background py-16 px-6">
+    <section
+      id="Why-AiELM"
+      className="w-full bg-foreground text-background py-16 px-6"
+    >
       <div className="mx-auto text-center">
         {/* Heading + Paragraph */}
-        <div className="mt-[90px] w-[776px] mx-auto text-center">
-          <h2 className="font-bold text-[38px] leading-[120%] text-secondary-foreground mb-[14px]">
-            Why leading enterprises choose <span className="text-primary">AiELM</span>
+        <div className="mt-[90px] w-[776px] max-md:w-[90%] mx-auto text-center">
+          <h2
+            className="
+      font-bold 
+      text-[38px] 
+      max-2xl:text-[36px]
+      max-xl:text-[34px]
+      max-lg:text-[32px] 
+      max-md:text-[28px] 
+      max-sm:text-[22px] 
+      leading-[120%] 
+      text-secondary-foreground 
+      mb-[12px] 
+      max-md:mb-[10px] 
+      max-sm:mb-[8px]
+    "
+          >
+            Why leading enterprises choose{" "}
+            <span className="text-primary">AiELM</span>
           </h2>
-          <p className="font-normal text-[16px] tracking-[0.009em] text-secondary-foreground">
-            Reimagine corporate training—not just completed, but optimized. AiELM isn’t just a learning
-            management system. It’s your operational efficiency engine.
+
+          <p
+            className="
+      font-normal 
+      text-[16px] 
+      max-md:text-[14.5px] 
+      max-sm:text-[13.5px] 
+      tracking-[0.009em] 
+      text-secondary-foreground 
+      leading-relaxed 
+      max-w-[650px] 
+      mx-auto
+    "
+          >
+            Reimagine corporate training—not just completed, but optimized.
+            AiELM isn’t just a learning management system. It’s your operational
+            efficiency engine.
           </p>
         </div>
 
@@ -59,7 +92,7 @@ const Whyaielm = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 items-center gap-16 max-w-[1250px] mx-auto">
           {/* Left → Heading */}
           <div className="w-full md:w-[500px] flex flex-col text-left ">
-            <h3 className="font-bold text-[38px] leading-[120%] tracking-[0] text-black font-headline">
+            <h3 className="font-bold text-[38px] max-lg:text-[30px] leading-[120%] tracking-[0] text-black font-headline">
               <span>Elevate Learning.</span>
               <span className="block">Accelerate Performance.</span>
             </h3>
@@ -68,8 +101,9 @@ const Whyaielm = () => {
           {/* Right → Paragraph + Button */}
           <div className="flex flex-col text-left space-y-6 w-full relative translate-y-2">
             <p className="font-normal text-[16px] leading-[24px] text-black max-w-full">
-              Achieve total workforce alignment, proven compliance,
-              and real-time<br /> productivity—powered by intelligent automation.
+              Achieve total workforce alignment, proven compliance, and
+              real-time
+              <br /> productivity—powered by intelligent automation.
             </p>
 
             <Button className="bg-primary text-foreground px-4 py-3 rounded-lg text-[14px] leading-[24px] w-[140px]">
