@@ -7,28 +7,22 @@ import "aos/dist/aos.css";
 
 export default function LenisSmooth() {
   useEffect(() => {
-    const lenis = initLenis({
-      smoothTouch: true, // mobile swipe scroll enabled
-    });
+    const lenis = initLenis({ smoothTouch: true });
 
-    // Lenis RAF loop
+    // RAF loop + AOS refresh
     function raf(time) {
       lenis.raf(time);
-      AOS.refresh(); // AOS update on scroll
+      AOS.refresh(); // scroll pe animations refresh
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
-    // Smooth scroll with correct header offset
+    // Smooth scroll with header offset
     const smoothScrollTo = (hash) => {
       const target = document.querySelector(hash);
       if (!target) return;
 
-      let headerOffset = 65; // adjust: navbar height
-      if (window.innerWidth < 768) {
-        headerOffset = 50; // mobile header height
-      }
-
+      let headerOffset = window.innerWidth < 768 ? 50 : 65;
       const targetPosition =
         target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
@@ -38,7 +32,7 @@ export default function LenisSmooth() {
       });
     };
 
-    // Handle all internal link clicks
+    // Anchor link clicks
     const handleLinkClick = (e) => {
       const href = e.currentTarget.getAttribute("href");
       if (href && href.startsWith("#")) {
@@ -48,7 +42,6 @@ export default function LenisSmooth() {
       }
     };
 
-    // Attach event listeners
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach((link) => {
       link.addEventListener("click", handleLinkClick);
@@ -58,12 +51,11 @@ export default function LenisSmooth() {
     // AOS init
     AOS.init({
       duration: 800,
-      once: false,
+      once: false,      // har scroll pe animate ho
       easing: "ease-out-cubic",
-      mirror: true,
+      mirror: true,     // scroll up pe bhi animate
     });
 
-    // Cleanup
     return () => {
       links.forEach((link) => {
         link.removeEventListener("click", handleLinkClick);

@@ -187,26 +187,24 @@
     font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
 
-  /* ✅ Lenis setup */
   html,
-  body {
-    overflow-x: hidden; /* prevent horizontal scroll */
-    overflow: hidden;   /* let Lenis control vertical scroll */
-    scrollbar-width: none;
-  }
+body {
+  overflow-x: hidden;   /* horizontal scroll disable */
+  overflow-y: auto;     /* vertical scroll enable for mobile & desktop */
+  scrollbar-width: none;
+}
 
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    display: none;
-  }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 
-  /* ✅ Optional: if you use data-lenis-prevent on sections */
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
+/* Lenis smooth scroll overrides */
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
 
-  /* ✅ Ensure Lenis disables native smooth scroll */
-  .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-  }
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
 }
