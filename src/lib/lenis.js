@@ -5,12 +5,12 @@ let lenis;
 export function initLenis() {
   if (!lenis) {
     lenis = new Lenis({
-      duration: 3, // 🐢 slower, smoother scroll
+      duration: 1.2,                  // smoother and faster scroll
       easing: (t) => 1 - Math.pow(1 - t, 3), // natural cubic easing
-      smoothWheel: true,
-      smoothTouch: true, // ✅ smoother touch scrolling on mobile
-      touchMultiplier: 1.5, // optional: makes scroll feel natural on mobile
-      lerp: 0.1, // optional: smooth interpolation
+      smoothWheel: true,              // mouse scroll
+      smoothTouch: true,              // mobile swipe scroll
+      touchMultiplier: 2,             // mobile scroll speed
+      lerp: 0.1,                      // smooth interpolation
     });
 
     function raf(time) {

@@ -7,12 +7,20 @@ import "aos/dist/aos.css";
 
 export default function LenisSmooth() {
   useEffect(() => {
-    const lenis = initLenis({ smoothTouch: true });
+    // Initialize Lenis with better mobile scrolling
+    const lenis = initLenis({
+      duration: 1.2,        // scroll speed
+      easing: (t) => 1 - Math.pow(1 - t, 3), 
+      smoothWheel: true,
+      smoothTouch: true,
+      touchMultiplier: 2,   // mobile swipe speed
+      lerp: 0.1,
+    });
 
     // RAF loop + AOS refresh
     function raf(time) {
       lenis.raf(time);
-      AOS.refresh(); // scroll pe animations refresh
+      AOS.refresh();
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
@@ -22,17 +30,17 @@ export default function LenisSmooth() {
       const target = document.querySelector(hash);
       if (!target) return;
 
-      let headerOffset = window.innerWidth < 768 ? 50 : 65;
+      const headerOffset = window.innerWidth < 768 ? 50 : 65;
       const targetPosition =
         target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
       lenis.scrollTo(targetPosition, {
-        duration: 1.5,
+        duration: 1.2,
         easing: (t) => 1 - Math.pow(1 - t, 3),
       });
     };
 
-    // Anchor link clicks
+    // Handle internal anchor links
     const handleLinkClick = (e) => {
       const href = e.currentTarget.getAttribute("href");
       if (href && href.startsWith("#")) {
@@ -48,14 +56,15 @@ export default function LenisSmooth() {
       link.addEventListener("touchend", handleLinkClick, { passive: false });
     });
 
-    // AOS init
+    // Initialize AOS
     AOS.init({
       duration: 800,
-      once: false,      // har scroll pe animate ho
+      once: false,
       easing: "ease-out-cubic",
-      mirror: true,     // scroll up pe bhi animate
+      mirror: true,
     });
 
+    // Cleanup
     return () => {
       links.forEach((link) => {
         link.removeEventListener("click", handleLinkClick);

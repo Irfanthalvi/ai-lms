@@ -186,20 +186,21 @@
     @apply bg-background text-foreground;
     font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
-
-  html,
+html,
 body {
   overflow-x: hidden;   /* horizontal scroll disable */
   overflow-y: auto;     /* vertical scroll enable for mobile & desktop */
-  scrollbar-width: none;
+  height: 100%;         /* full height for Lenis */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  scrollbar-width: none; /* hide scrollbar for Firefox */
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;
+  display: none; /* hide scrollbar for Chrome/Safari */
 }
 
-/* Lenis smooth scroll overrides */
+/* Lenis overrides */
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
@@ -207,4 +208,5 @@ body::-webkit-scrollbar {
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
+
 }
