@@ -186,9 +186,10 @@
     font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
   html, body {
+    overflow-x: hidden; /* ✅ fix right-side gap */
     overflow-y: auto;
     scrollbar-width: none;
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   html::-webkit-scrollbar,
@@ -196,3 +197,4 @@
     display: none;
   }
 }
+
