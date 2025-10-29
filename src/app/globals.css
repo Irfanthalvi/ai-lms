@@ -190,7 +190,6 @@ html,
 body {
   overflow-x: hidden;   /* horizontal scroll disable */
   overflow-y: auto;     /* vertical scroll enable for mobile & desktop */
-  height: 100%;         /* full height for Lenis */
   -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
   scrollbar-width: none; /* hide scrollbar for Firefox */
 }
