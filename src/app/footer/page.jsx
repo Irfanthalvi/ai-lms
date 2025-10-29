@@ -6,8 +6,8 @@ import { contactInfo, navLinks, policyLinks, socialLinks } from "../data/footer-
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background text-[14px] overflow-x-hidden">
-      <div className="mx-auto max-w-[1650px] w-full px-2 lg:px-[190px] py-6 space-y-10">
+    <footer className="w-full bg-background text-[14px]">
+      <div className="mx-auto w-[1650px] max-w-full px-2 lg:px-[190px] py-6 space-y-10">
         {/* === Row 1: Logo + Nav === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 max-md:gap-4 max-sm:gap-3">
           {/* Logo */}
