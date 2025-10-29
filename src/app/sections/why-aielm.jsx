@@ -16,6 +16,9 @@ const Whyaielm = () => {
         {/* Heading + Paragraph */}
         <div className="mt-[90px] w-[776px] max-md:w-[90%] mx-auto text-center">
           <h2
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
             className="
       font-bold 
       text-[38px] 
@@ -36,6 +39,8 @@ const Whyaielm = () => {
           </h2>
 
           <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
             className="
       font-normal 
       text-[16px] 
@@ -58,6 +63,9 @@ const Whyaielm = () => {
         <div className="w-full max-w-[1250px] mx-auto mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {aielm.map((item, idx) => (
             <Card
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
               key={idx}
               className="rounded-xl overflow-hidden flex flex-col h-[358px] w-full p-0"
               style={{
@@ -66,12 +74,17 @@ const Whyaielm = () => {
               }}
             >
               {/* Image */}
-              <div className="relative w-full h-[220px] sm:h-[250px] md:h-[280px] overflow-hidden">
+              <div
+                className="relative w-full h-[220px] sm:h-[250px] md:h-[280px] overflow-hidden rounded-sm group"
+                data-aos="zoom-in-up" // scroll animation
+                data-aos-once="true" // animate only once on scroll
+              >
                 <Image
                   src={item.img}
                   alt={item.title || "Section image"}
                   fill
-                  className="object-cover h-full object-center rounded-sm"
+                  className="cursor-pointer object-cover object-center transition-transform duration-700 ease-out 
+               group-hover:scale-110 group-hover:-translate-y-3"
                 />
               </div>
 
@@ -89,7 +102,10 @@ const Whyaielm = () => {
         </div>
 
         {/* Extra Section */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 items-center gap-16 max-w-[1250px] mx-auto">
+        <div
+          data-aos="fade-left"
+          className="mt-12 grid grid-cols-1 md:grid-cols-2 items-center gap-16 max-w-[1250px] mx-auto"
+        >
           {/* Left → Heading */}
           <div className="w-full md:w-[500px] flex flex-col text-left ">
             <h3 className="font-bold text-[38px] max-lg:text-[30px] leading-[120%] tracking-[0] text-black font-headline">

@@ -3,17 +3,34 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { cards, description1, description2, features, highlight, icons, mainTitle } from "../data/solution-mock";
+import {
+  cards,
+  description1,
+  description2,
+  features,
+  highlight,
+  icons,
+  mainTitle,
+} from "../data/solution-mock";
 
 export default function SolutionSection() {
   return (
-    <section className="w-full bg-white px-6 md:px-16 py-38 max-xl:py-32 max-lg:py-28 max-md:py-24 max-sm:py-20" id="Solutions">
+    <section
+      className="w-full bg-white px-6 md:px-16 py-38 max-xl:py-32 max-lg:py-28 max-md:py-24 max-sm:py-20"
+      id="Solutions"
+    >
       {/* Heading Section */}
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-[26px] md:text-[38px] font-extrabold text-[#111827] leading-[1.15] max-md:text-[32px] max-sm:text-[28px]">
+        <h2
+          data-aos="zoom-out-down"
+          className="text-[26px] md:text-[38px] font-extrabold text-[#111827] leading-[1.15] max-md:text-[32px] max-sm:text-[28px]"
+        >
           {mainTitle} <p className="text-[#0F8F85]">{highlight}</p>
         </h2>
-        <p className="mt-3.5 text-[18px] md:text-[16px] mx-auto max-w-[680px] text-black max-md:text-[15px] max-sm:text-[14px] leading-relaxed">
+        <p
+          data-aos="zoom-out-up"
+          className="mt-3.5 text-[18px] md:text-[16px] mx-auto max-w-[680px] text-black max-md:text-[15px] max-sm:text-[14px] leading-relaxed"
+        >
           {description1}
           <br />
           {description2}
@@ -32,6 +49,9 @@ export default function SolutionSection() {
                 max-xl:w-[306px] max-xl:h-[300px]
                 max-lg:w-full max-lg:h-auto
               "
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
             >
               <CardContent className="p-4 md:p-4">
                 <div className="flex flex-col items-center">
@@ -39,9 +59,11 @@ export default function SolutionSection() {
                     <Icon className="size-5 text-white" />
                   </div>
 
-                  <h3 className="text-[22px] md:text-[23px] font-semibold mb-2 text-[#111827]
+                  <h3
+                    className="text-[22px] md:text-[23px] font-semibold mb-2 text-[#111827]
                     max-xl:text-[21px] max-lg:text-[19px] max-md:text-[18px] max-sm:text-[16px]
-                  ">
+                  "
+                  >
                     {item.title}
                   </h3>
                   <p
@@ -58,7 +80,10 @@ export default function SolutionSection() {
       </div>
 
       {/* === Dynamic Features Row === */}
-      <div className="w-[1250px] max-w-full mx-auto mt-15.5 mb-2 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-2xl:w-[1100px] max-xl:w-[950px] max-lg:w-[700px] max-md:w-[90%] max-sm:w-[95%]">
+      <div
+        data-aos="fade-left"
+        className="w-[1250px] max-w-full mx-auto mt-15.5 mb-2 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-2xl:w-[1100px] max-xl:w-[950px] max-lg:w-[700px] max-md:w-[90%] max-sm:w-[95%]"
+      >
         {features.map((feature, i) => (
           <div key={i} className="flex items-start gap-3 max-sm:gap-2">
             <div className="w-8 h-8 rounded-full flex items-center justify-center mt-1 max-sm:w-6 max-sm:h-6">

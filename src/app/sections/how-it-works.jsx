@@ -15,19 +15,33 @@ const HowItWorks = () => {
 
       <div className="relative mx-auto text-center mt-16">
         {/* Heading */}
-        <h2 className="text-2xl md:text-[46px] font-bold mb-7">
+        <h2
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="text-2xl md:text-[46px] font-bold mb-7"
+        >
           How it works:{" "}
           <span className="text-teal-400">From start to smart</span>
         </h2>
 
-        <p className="mx-auto text-base md:text-[16.5px] text-gray-300 mb-14 leading-relaxed">
+        <p
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="mx-auto text-base md:text-[16.5px] text-gray-300 mb-14 leading-relaxed"
+        >
           Behind every training session, AiELM runs a powerful, intelligent
-          workflow designed to verify,<br /> adapt, measure, and optimize — all in
-          real time. Here’s what that journey looks like:
+          workflow designed to verify,
+          <br /> adapt, measure, and optimize — all in real time. Here’s what
+          that journey looks like:
         </p>
 
         {/* Row 1 → 2 cards */}
         <div
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           className="
             grid grid-cols-1 sm:grid-cols-2 gap-[38px] text-left mb-8 
             max-w-[1250px] mx-auto
@@ -64,6 +78,9 @@ const HowItWorks = () => {
 
         {/* Row 2 → 3 cards */}
         <div
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           className="
             grid grid-cols-1 sm:grid-cols-3 gap-[38px] text-left 
             max-w-[1250px] mx-auto mb-[72px] pt-2

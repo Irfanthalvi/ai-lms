@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./footer/page";
 import Navbar from "./navbar/page";
 import LenisSmooth from "@/components/LenisSmooth";
+import AOSInit from "@/components/AOSInit";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={`${plusJakartaSans.variable} antialiased`}>
-        <LenisSmooth /> {/* 👈 Lenis runs on client */}
+        <LenisSmooth /> 
+        <AOSInit /> 
         <header>
           <Navbar />
         </header>

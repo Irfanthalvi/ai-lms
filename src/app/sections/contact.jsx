@@ -54,18 +54,19 @@ export default function Contact() {
           {/* Left Side */}
           <div className="flex flex-col max-xl:items-center max-xl:text-center">
             <Button
+            data-aos="fade-right"
               variant="default"
               className="w-fit h-[30px] bg-[#004C46] hover:bg-[#003C38] text-white px-4 rounded-full text-sm mb-7 shadow-md max-xl:mx-auto"
             >
               Get In Touch
             </Button>
 
-            <h1 className="text-[45px] font-bold text-[#0A0A0A] mb-3 leading-[1.1] max-xl:text-[38px] max-lg:text-[34px] max-md:text-[30px] max-sm:text-[26px]">
+            <h1 data-aos="fade-left" className="text-[45px] font-bold text-[#0A0A0A] mb-3 leading-[1.1] max-xl:text-[38px] max-lg:text-[34px] max-md:text-[30px] max-sm:text-[26px]">
               Let’s Build the Future
               <br /> of Learning Together
             </h1>
 
-            <p className="text-gray-800 text-[17px] leading-[1.4] tracking-wide font-semibold max-xl:text-[16px] max-lg:text-[15px] max-md:text-[14px] max-sm:text-[13px] max-xl:text-center">
+            <p data-aos="fade-right" className="text-gray-800 text-[17px] leading-[1.4] tracking-wide font-semibold max-xl:text-[16px] max-lg:text-[15px] max-md:text-[14px] max-sm:text-[13px] max-xl:text-center">
               Have a question? Curious about how AiELM can
               <br className="max-md:hidden" /> transform compliance,
               training, or workforce efficiency in
@@ -78,6 +79,7 @@ export default function Contact() {
 
           {/* Right Side Form */}
           <form
+          data-aos="zoom-in"
             onSubmit={handleSubmit(onSubmit)}
             className="bg-[#eef6f4] border border-[#c8d4d2] p-8 rounded-4xl shadow-4xl backdrop-blur-sm space-y-5 text-black ml-[-65px] max-xl:ml-0 max-lg:p-6 max-md:p-5 max-sm:p-4 max-xl:w-full"
           >

@@ -24,7 +24,7 @@ export default function LenisSmooth() {
         target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
       lenis.scrollTo(targetPosition, {
-        duration: 1.8,
+        duration: 3,
         easing: (t) => 1 - Math.pow(1 - t, 3),
       });
     };

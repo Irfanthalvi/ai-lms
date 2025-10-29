@@ -38,6 +38,7 @@ const Header = () => {
           "
         >
           <div
+          data-aos="fade-right"
             className="
               bg-primary text-accent w-[305px] text-sm tracking-wide py-1 rounded-full flex items-center justify-center mb-[1.5px]
               max-xl:w-[270px] max-lg:w-[230px] max-md:w-[200px] max-sm:w-[170px]
@@ -48,6 +49,7 @@ const Header = () => {
           </div>
 
           <h1
+          data-aos="fade-left"
             className="
               w-[830px] h-[95px] font-bold text-[45px] leading-[100%] tracking-[0.009em] text-center text-secondary mx-auto
               max-2xl:w-[750px] max-xl:w-[650px] max-lg:w-[520px] max-md:w-[90%] max-sm:w-[95%]
@@ -61,6 +63,7 @@ const Header = () => {
 
         {/* Video */}
         <div
+        data-aos="zoom-in-up"
           className="
             w-full h-screen flex items-center justify-center z-10 transform translate-y-9
             max-2xl:h-[850px] max-xl:h-[700px] max-lg:h-[600px] max-md:h-[500px] max-sm:h-[350px]

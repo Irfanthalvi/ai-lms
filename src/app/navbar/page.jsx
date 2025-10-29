@@ -32,7 +32,10 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 z-50 w-full h-[65px] bg-background backdrop-blur-xl border-b border-border/5 flex items-center justify-center">
       <div className="w-full flex items-center justify-between gap-[60px] px-[225px] relative max-xl:px-[100px] max-lg:px-[60px] max-md:px-[30px] max-sm:px-4">
         {/* Logo */}
-        <div className="absolute top-1/2 left-57 max-xl:left-5 max-sm:static max-sm:translate-y-0 max-sm:flex max-sm:items-center -translate-y-1/2 z-10">
+        <div
+          data-aos="fade-right"
+          className="absolute top-1/2 left-57 max-xl:left-5 max-sm:static max-sm:translate-y-0 max-sm:flex max-sm:items-center -translate-y-1/2 z-10"
+        >
           <Link
             href="#hero-section"
             onClick={() => handleScroll("#hero-section")}
@@ -48,7 +51,10 @@ const Navbar = () => {
         </div>
 
         {/* Nav Links - xl+ */}
-        <nav className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex space-x-4 hidden max-xl:hidden xl:flex">
+        <nav
+          data-aos="fade-down"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex space-x-4 hidden max-xl:hidden xl:flex"
+        >
           {navItems.map((item, index) => (
             <Link
               key={index}
@@ -64,7 +70,10 @@ const Navbar = () => {
         {/* Button - xl+ */}
         <div className="absolute top-1/2 right-58 -translate-y-1/2 hidden max-xl:hidden xl:block">
           <Link href="#contact" onClick={() => handleScroll("#contact")}>
-            <Button className="text-[14px] hover:bg-accent-foreground">
+            <Button
+              className="text-[14px] hover:bg-accent-foreground"
+              data-aos="fade-left"
+            >
               Get In Touch
             </Button>
           </Link>
@@ -74,7 +83,10 @@ const Navbar = () => {
         <div className="absolute top-1/2 right-4 -translate-y-1/2 xl:hidden max-sm:right-2">
           <Sheet>
             <SheetTrigger asChild>
-              <Button className="text-[13px] px-4 py-2 max-sm:px-3 max-sm:py-1">
+              <Button
+                data-aos="fade-left"
+                className="text-[13px] px-4 py-2 max-sm:px-3 max-sm:py-1"
+              >
                 Menu
               </Button>
             </SheetTrigger>
@@ -85,7 +97,10 @@ const Navbar = () => {
             >
               {" "}
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <div className="flex justify-between items-center mb-6">
+              <div
+                data-aos="fade-right"
+                className="flex justify-between items-center mb-6"
+              >
                 <Image
                   src="/images/header-footer-logo.png"
                   alt="AiELM Logo"
@@ -102,6 +117,7 @@ const Navbar = () => {
                 {navItems.map((item, index) => (
                   <SheetClose key={index} asChild>
                     <Button
+                    data-aos="fade-left"
                       variant="ghost"
                       className="w-full justify-start text-[14px]"
                       onClick={() => handleScroll(item.href)}
@@ -114,6 +130,7 @@ const Navbar = () => {
               <div className="mt-6">
                 <SheetClose asChild>
                   <Button
+                    data-aos="fade-right"
                     className="w-full text-[14px]"
                     onClick={() => handleScroll("#contact")}
                   >
