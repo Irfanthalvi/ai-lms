@@ -181,20 +181,32 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
-  html, body {
-    overflow-x: hidden; /* ✅ fix right-side gap */
-    overflow-y: auto;
+
+  /* ✅ Lenis setup */
+  html,
+  body {
+    overflow-x: hidden; /* prevent horizontal scroll */
+    overflow: hidden;   /* let Lenis control vertical scroll */
     scrollbar-width: none;
-    scroll-behavior: smooth;
   }
 
   html::-webkit-scrollbar,
   body::-webkit-scrollbar {
     display: none;
   }
-}
 
+  /* ✅ Optional: if you use data-lenis-prevent on sections */
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  /* ✅ Ensure Lenis disables native smooth scroll */
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+}
