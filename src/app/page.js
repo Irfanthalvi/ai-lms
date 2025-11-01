@@ -9,6 +9,7 @@ import SolutionSection from "./sections/solution-section";
 import AboutSection from "./sections/about-section";
 
 
+
 const Page = () => {
   return (
     <div>

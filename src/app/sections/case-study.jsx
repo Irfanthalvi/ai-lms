@@ -54,7 +54,8 @@ const Casestudy = () => {
           max-md:h-auto
           max-sm:static
         "
-        data-aos="fade-left"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <Image
           src={imageSrc}
@@ -91,7 +92,8 @@ const Casestudy = () => {
       >
         {/* Heading */}
         <h2
-          data-aos="fade-down"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[22px] pl-1 font-bold leading-[1.2] mb-4"
         >
           {mainTitle}
@@ -114,7 +116,8 @@ const Casestudy = () => {
             max-sm:text-[12.5px]
           "
           dangerouslySetInnerHTML={{ __html: introText }}
-          data-aos="fade-right"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         />
 
         {/* Features */}
@@ -138,6 +141,8 @@ const Casestudy = () => {
             return (
               <div
                 key={index}
+                data-aos="fade-up"
+                data-aos-duration="2000"
                 className="
                   flex 
                   items-start 
@@ -147,13 +152,9 @@ const Casestudy = () => {
                   max-md:gap-2.5
                 "
               >
-                <Icon
-                  data-aos="zoom-in-up"
-                  className="size-8 text-[#4FD1C5] shrink-0 max-xl:size-4 max-lg:size-6 max-md:size-5 max-sm:size-5"
-                />
+                <Icon className="size-8 text-[#4FD1C5] shrink-0 max-xl:size-4 max-lg:size-6 max-md:size-5 max-sm:size-5" />
                 <div>
                   <h3
-                    data-aos="fade-left"
                     className="
                       text-gray-200 
                       font-semibold 
@@ -168,7 +169,6 @@ const Casestudy = () => {
                     {item.title}
                   </h3>
                   <p
-                    data-aos="fade-right"
                     className="
                       text-gray-300 
                       text-[16px] 
@@ -190,7 +190,11 @@ const Casestudy = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-gray-200">
+        <div
+          className="text-gray-200"
+          data-aos="fade-up"
+          data-aos-duration="2500"
+        >
           <p
             className="
               text-[17px] 
@@ -201,7 +205,6 @@ const Casestudy = () => {
               max-md:text-[13.5px]
               max-sm:text-[8px]
             "
-            data-aos="fade-right"
           >
             {ctaText1}
           </p>
@@ -216,13 +219,11 @@ const Casestudy = () => {
               max-md:text-[13.5px]
               max-sm:text-[8px]
             "
-            data-aos="fade-left"
           >
             {ctaText2}
           </p>
 
           <button
-            data-aos="fade-up"
             className="
               mt-6 
               px-6 

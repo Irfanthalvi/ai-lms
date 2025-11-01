@@ -10,26 +10,28 @@ const Industries = () => {
     <section id="industries" className="w-full bg-white py-39">
       <div className="px-4 text-center">
         <h2
-          data-aos="zoom-out-right"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="text-[43.5px] font-bold leading-[1.01] tracking-wide text-gray-900"
         >
           Built for every industry,
           <br />
-          <span data-aos="zoom-out-left" className="text-teal-700">
+          <span className="text-teal-700">
             Designed for impact
           </span>
         </h2>
 
         <p
-          data-aos="zoom-out-left"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="mt-10 text-black text-[17px] leading-[1.3] -tracking-[0.021em]"
         >
           Whether it’s healthcare, finance, manufacturing, or retail, AELEM
-          adapts to the unique compliance <br data-aos="zoom-out-right" />
+          adapts to the unique compliance <br />
           demands, workforce challenges, and growth opportunities of your
           industry. Our platform ensures
-          <br data-aos="zoom-out-left" /> learning is relevant, measurable, and
-          future-proof across sectors.
+          <br /> learning is relevant, measurable, and future-proof across
+          sectors.
         </p>
 
         <div className="mt-9.5 max-w-[1250px] mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -43,7 +45,8 @@ const Industries = () => {
                 background:
                   "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
               }}
-              data-aos="flip-down"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <div
                 className="relative w-full overflow-hidden rounded-sm group"

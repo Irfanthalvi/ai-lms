@@ -22,13 +22,15 @@ export default function SolutionSection() {
       {/* Heading Section */}
       <div className="max-w-4xl mx-auto text-center">
         <h2
-          data-aos="zoom-out-down"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="text-[26px] md:text-[38px] font-extrabold text-[#111827] leading-[1.15] max-md:text-[32px] max-sm:text-[28px]"
         >
           {mainTitle} <p className="text-[#0F8F85]">{highlight}</p>
         </h2>
         <p
-          data-aos="zoom-out-up"
+          data-aos="fade-up"
+          data-aos-duration="1500"
           className="mt-3.5 text-[18px] md:text-[16px] mx-auto max-w-[680px] text-black max-md:text-[15px] max-sm:text-[14px] leading-relaxed"
         >
           {description1}
@@ -49,9 +51,8 @@ export default function SolutionSection() {
                 max-xl:w-[306px] max-xl:h-[300px]
                 max-lg:w-full max-lg:h-auto
               "
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <CardContent className="p-4 md:p-4">
                 <div className="flex flex-col items-center">
@@ -81,7 +82,8 @@ export default function SolutionSection() {
 
       {/* === Dynamic Features Row === */}
       <div
-        data-aos="fade-left"
+        data-aos="fade-up"
+        data-aos-duration="2500"
         className="w-[1250px] max-w-full mx-auto mt-15.5 mb-2 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-2xl:w-[1100px] max-xl:w-[950px] max-lg:w-[700px] max-md:w-[90%] max-sm:w-[95%]"
       >
         {features.map((feature, i) => (

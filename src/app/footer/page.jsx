@@ -11,7 +11,7 @@ export default function Footer() {
         {/* === Row 1: Logo + Nav === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 max-md:gap-4 max-sm:gap-3">
           {/* Logo */}
-          <div data-aos="fade-right" className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <Image
               src="/images/header-footer-logo.png"
               alt="AiELM Logo"
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <nav data-aos="fade-right" className="flex flex-wrap gap-6 lg:gap-8 font-normal text-secondary max-md:gap-4 max-sm:gap-3">
+          <nav className="flex flex-wrap gap-6 lg:gap-8 font-normal text-secondary max-md:gap-4 max-sm:gap-3">
             {navLinks.map((link) => (
               <a
                 key={link}
@@ -38,7 +38,7 @@ export default function Footer() {
         {/* === Row 2: Social + Contact === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 max-md:gap-4 max-sm:gap-3">
           {/* Social icons */}
-          <div data-aos="fade-left" className="flex gap-6 text-xl text-primary-foreground max-sm:gap-4">
+          <div className="flex gap-6 text-xl text-primary-foreground max-sm:gap-4">
             {socialLinks.map((social, idx) => (
               <a
                 key={idx}
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div data-aos="fade-left" className="flex flex-col sm:flex-row sm:flex-wrap gap-6 lg:gap-10 max-sm:gap-3 text-secondary">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 lg:gap-10 max-sm:gap-3 text-secondary">
             {contactInfo.map((item, idx) => (
               <div key={idx} className="flex items-center gap-2 max-sm:flex-col max-sm:items-start">
                 <span className="text-primary-foreground shrink-0 text-[14px] max-sm:text-[12px]">
@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="border bg-border" />
 
         {/* === Row 3: Copyright === */}
-        <div   className="flex flex-col lg:flex-row items-center justify-between gap-4 pb-6 text-secondary text-[13px] max-sm:text-[11px] max-md:gap-3">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pb-6 text-secondary text-[13px] max-sm:text-[11px] max-md:gap-3">
           <span  className="max-sm:text-[11px]">Copyright © {new Date().getFullYear()} AiELM. All rights reserved.</span>
           <div  className="flex flex-wrap gap-6 lg:gap-8 max-sm:gap-4">
             {policyLinks.map((link) => (
