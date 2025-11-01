@@ -87,22 +87,20 @@ const Navbar = () => {
           <Sheet>
             <SheetTrigger asChild>
               <Button
-                data-aos="fade-down"
+                data-aos="fade-right"
                 data-aos-duration="1000"
                 className="text-[13px] px-4 py-2 max-sm:px-3 max-sm:py-1"
               >
                 Menu
               </Button>
             </SheetTrigger>
-
             <SheetContent
-              side="left" // 🔹 change from "top" to "left"
-              className="p-6 w-full max-w-full" // adjust width as needed
+              side="left"
+              className="p-6 w-full max-w-full bg-black/90 text-white backdrop-blur-md"
             >
-              {" "}
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div
-                data-aos="fade-down"
+                data-aos="fade-right"
                 data-aos-duration="1000"
                 className="flex justify-between items-center mb-6"
               >
@@ -122,7 +120,7 @@ const Navbar = () => {
                 {navItems.map((item, index) => (
                   <SheetClose key={index} asChild>
                     <Button
-                      data-aos="fade-down"
+                      data-aos="fade-right"
                       data-aos-duration="1000"
                       variant="ghost"
                       className="w-full justify-start text-[14px]"
@@ -136,7 +134,7 @@ const Navbar = () => {
               <div className="mt-6">
                 <SheetClose asChild>
                   <Button
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                     data-aos-duration="1000"
                     className="w-full text-[14px]"
                     onClick={() => handleScroll("#contact")}

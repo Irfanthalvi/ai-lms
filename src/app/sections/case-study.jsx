@@ -94,7 +94,7 @@ const Casestudy = () => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[22px] pl-1 font-bold leading-[1.2] mb-4"
+          className="text-[38px] max-2xl:text-[32px] max-xl:text-[28px] max-lg:text-[26px] max-md:text-[24px] max-sm:text-[15px] pl-1 font-bold leading-[1.2] mb-4"
         >
           {mainTitle}
           <br />
@@ -113,7 +113,7 @@ const Casestudy = () => {
             max-xl:text-[12px] 
             max-lg:text-[13.5px] 
             max-md:text-[13px]
-            max-sm:text-[12.5px]
+            max-sm:text-[6px]
           "
           dangerouslySetInnerHTML={{ __html: introText }}
           data-aos="fade-up"

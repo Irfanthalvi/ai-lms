@@ -74,7 +74,7 @@ const Industries = () => {
                 <h3 className="text-[20px] font-semibold text-[#0A0A0A] mb-1">
                   {item.title}
                 </h3>
-                <p className="text-[14px] text-left text-[#0A0A0A] leading-6">
+                <p className="text-[14px] text-left text-[#0A0A0A] leading-6 max-sm:text-[12px]">
                   {item.desc}
                 </p>
               </CardContent>

@@ -17,17 +17,16 @@ export default function Footer() {
               alt="AiELM Logo"
               width={110}
               height={110}
-              className="max-sm:w-20 max-sm:h-20"
             />
           </div>
 
           {/* Navigation */}
-          <nav className="flex flex-wrap gap-6 lg:gap-8 font-normal text-secondary max-md:gap-4 max-sm:gap-3">
+          <nav className="flex flex-wrap gap-6 lg:gap-8 font-normal text-secondary max-md:gap-4 max-sm:gap-2">
             {navLinks.map((link) => (
               <a
                 key={link}
                 href="#"
-                className="hover:text-primary transition-colors text-[14px] max-sm:text-[12px]"
+                className="hover:text-primary transition-colors text-[14px] max-sm:text-[8px]"
               >
                 {link}
               </a>
@@ -38,12 +37,12 @@ export default function Footer() {
         {/* === Row 2: Social + Contact === */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 max-md:gap-4 max-sm:gap-3">
           {/* Social icons */}
-          <div className="flex gap-6 text-xl text-primary-foreground max-sm:gap-4">
+          <div className="flex gap-6 text-xl text-primary-foreground max-sm:gap-5">
             {socialLinks.map((social, idx) => (
               <a
                 key={idx}
                 href={social.href}
-                className="hover:text-secondary transition-colors text-[22px] max-sm:text-[18px]"
+                className="hover:text-secondary transition-colors text-[22px] max-sm:text-[18px] "
               >
                 {social.icon}
               </a>
@@ -51,13 +50,13 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 lg:gap-10 max-sm:gap-3 text-secondary">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 lg:gap-10 max-sm:gap-2 text-secondary">
             {contactInfo.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2 max-sm:flex-col max-sm:items-start">
+              <div key={idx} className="flex items-center gap-2 max-sm:items-start">
                 <span className="text-primary-foreground shrink-0 text-[14px] max-sm:text-[12px]">
                   {item.icon}
                 </span>
-                <span className="max-sm:text-[12px]">{item.text}</span>
+                <span className="max-sm:text-[8px]">{item.text}</span>
               </div>
             ))}
           </div>

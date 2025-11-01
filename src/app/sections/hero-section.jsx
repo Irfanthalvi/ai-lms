@@ -49,7 +49,7 @@ const Header = () => {
             className="
               bg-primary text-accent w-[305px] text-sm tracking-wide py-1 rounded-full flex items-center justify-center mb-[1.5px]
               max-xl:w-[270px] max-lg:w-[230px] max-md:w-[200px] max-sm:w-[170px]
-              max-lg:text-[13px] max-md:text-[12px] max-sm:text-[11px]
+              max-lg:text-[13px] max-md:text-[12px] max-sm:text-[8px]
             "
           >
             {tagline}
