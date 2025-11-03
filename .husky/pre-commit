@@ -1,0 +1,9 @@
+echo "🚀 Running lint-staged on staged files..."
+npm run lint:staged
+
+if [ $? -ne 0 ]; then
+  echo "❌ Linting failed. Commit aborted."
+  exit 1
+fi
+
+echo "✅ Linting complete. Proceeding with commit..."

@@ -203,7 +203,7 @@ const Casestudy = () => {
               max-xl:text-[12px] 
               max-lg:text-[14px] 
               max-md:text-[13.5px]
-              max-sm:text-[8px]
+              max-sm:text-[5px]
             "
           >
             {ctaText1}
@@ -217,7 +217,7 @@ const Casestudy = () => {
               max-xl:text-[12px] 
               max-lg:text-[14px] 
               max-md:text-[13.5px]
-              max-sm:text-[8px]
+              max-sm:text-[5px]
             "
           >
             {ctaText2}
