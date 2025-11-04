@@ -9,11 +9,11 @@ export default function LenisSmooth() {
   useEffect(() => {
     // Initialize Lenis with better mobile scrolling
     const lenis = initLenis({
-      duration: 1.2,        // scroll speed
-      easing: (t) => 1 - Math.pow(1 - t, 3), 
+      duration: 3, // scroll speed
+      easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
       smoothTouch: true,
-      touchMultiplier: 2,   // mobile swipe speed
+      touchMultiplier: 2, // mobile swipe speed
       lerp: 0.1,
     });
 
@@ -35,7 +35,7 @@ export default function LenisSmooth() {
         target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
       lenis.scrollTo(targetPosition, {
-        duration: 1.2,
+        duration: 3,
         easing: (t) => 1 - Math.pow(1 - t, 3),
       });
     };

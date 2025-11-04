@@ -59,28 +59,25 @@
   --radius: 0.625rem;
 
   /* Light mode solid colors */
-  --background: oklch(0.2161 0.0061 56.04 / 85.1%);            /* #1C1917 */ 
-  --foreground: oklch(1 0 0);                          /* #FFFFFF */  
-  
-    --primary: oklch(0.4883 0.0835 205.88);                /* button color */
-  --primary-foreground: oklch(0.7772 0.0679 187.48);      /* #83C5BE */
+  --background: oklch(0.2161 0.0061 56.04 / 85.1%); /* #1C1917 */
+  --foreground: oklch(1 0 0); /* #FFFFFF */
 
+  --primary: oklch(0.4883 0.0835 205.88); /* button color */
+  --primary-foreground: oklch(0.7772 0.0679 187.48); /* #83C5BE */
 
   --card: oklch(0.243 0.027 195.52);
   --card-foreground: oklch(0.2037 0.0217 195.58);
 
-  --popover: oklch(100% 0 0);                 /* #FFFFFF */
+  --popover: oklch(100% 0 0); /* #FFFFFF */
   --popover-foreground: oklch(18% 0.025 209);
 
-
-
-  --secondary: oklch(98% 0 0);                    /* #FFFFFF */
+  --secondary: oklch(98% 0 0); /* #FFFFFF */
   --secondary-foreground: oklch(20% 0 0);
 
-  --muted: oklch(90% 0.01 95);                /* #D6D3D1 */
-  --muted-foreground: oklch(55% 0.01 95);     /* #78716C */
+  --muted: oklch(90% 0.01 95); /* #D6D3D1 */
+  --muted-foreground: oklch(55% 0.01 95); /* #78716C */
 
-  --accent: oklch(0.9379 0.0696 202.73);              /* text color */
+  --accent: oklch(0.9379 0.0696 202.73); /* text color */
   --accent-foreground: oklch(0.7772 0.0679 187.48);
 
   --destructive: oklch(55% 0.25 27);
@@ -104,31 +101,55 @@
   --sidebar-ring: oklch(70% 0 0);
 
   /* Extra Figma colors */
-  --teal-500: oklch(80% 0.07 180);            /* #83C5BE */
-  --teal-600: oklch(63% 0.13 185);            /* #006D77 */
-  --gray-700: oklch(30% 0.02 95);             /* #171717 */
-  --gray-900: oklch(5% 0 95);                 /* #070707 */
-  --extra-blue: oklch(30% 0.1 255);           /* #1D4683 */
-  --extra-aqua: oklch(90% 0.1 190);           /* #B3F9FF */
-  --extra-dark: oklch(12% 0 95);              /* #0F1419 */
+  --teal-500: oklch(80% 0.07 180); /* #83C5BE */
+  --teal-600: oklch(63% 0.13 185); /* #006D77 */
+  --gray-700: oklch(30% 0.02 95); /* #171717 */
+  --gray-900: oklch(5% 0 95); /* #070707 */
+  --extra-blue: oklch(30% 0.1 255); /* #1D4683 */
+  --extra-aqua: oklch(90% 0.1 190); /* #B3F9FF */
+  --extra-dark: oklch(12% 0 95); /* #0F1419 */
 
   /* Transparencies */
-  --overlay-light-30: oklch(100% 0 0 / 0.3);  /* #FFFFFF4D */
-  --overlay-dark-10: oklch(10% 0 95 / 0.1);   /* #1C19171A */
-  --overlay-dark-12: oklch(10% 0 95 / 0.12);  /* #1C19171F */
-  --overlay-dark-85: oklch(10% 0 95 / 0.85);  /* #1C1917D9 */
-  --overlay-white-10: oklch(100% 0 0 / 0.1);  /* #FFFFFF1A */
-  --overlay-white-6: oklch(100% 0 0 / 0.06);  /* #FFFFFF0D */
+  --overlay-light-30: oklch(100% 0 0 / 0.3); /* #FFFFFF4D */
+  --overlay-dark-10: oklch(10% 0 95 / 0.1); /* #1C19171A */
+  --overlay-dark-12: oklch(10% 0 95 / 0.12); /* #1C19171F */
+  --overlay-dark-85: oklch(10% 0 95 / 0.85); /* #1C1917D9 */
+  --overlay-white-10: oklch(100% 0 0 / 0.1); /* #FFFFFF1A */
+  --overlay-white-6: oklch(100% 0 0 / 0.06); /* #FFFFFF0D */
   --overlay-white-12: oklch(100% 0 0 / 0.12); /* #FFFFFF1F */
   --overlay-white-75: oklch(100% 0 0 / 0.75); /* gradient overlay */
 
   /* Gradients */
-  --gradient-primary: linear-gradient(180deg, oklch(100% 0 0 / 0.3) 0%, oklch(80% 0.07 180 / 0.3) 100%);
-  --gradient-teal-dark: linear-gradient(180deg, oklch(80% 0.07 180) 0.15%, oklch(63% 0.13 185) 75.93%);
-  --gradient-gray: linear-gradient(90deg, oklch(35% 0 95) 0%, oklch(20% 0 95) 100%);
-  --gradient-metal: linear-gradient(90deg, oklch(40% 0.01 95) 0%, oklch(80% 0.01 95) 100%);
-  --gradient-dark: linear-gradient(180deg, oklch(20% 0 95) -13.67%, oklch(7% 0 95) 92.78%);
-  --gradient-overlay: radial-gradient(48.97% 48.96% at 48.52% 50%, oklch(98% 0 95) 0%, oklch(15% 0 95 / 0) 100%);
+  --gradient-primary: linear-gradient(
+    180deg,
+    oklch(100% 0 0 / 0.3) 0%,
+    oklch(80% 0.07 180 / 0.3) 100%
+  );
+  --gradient-teal-dark: linear-gradient(
+    180deg,
+    oklch(80% 0.07 180) 0.15%,
+    oklch(63% 0.13 185) 75.93%
+  );
+  --gradient-gray: linear-gradient(
+    90deg,
+    oklch(35% 0 95) 0%,
+    oklch(20% 0 95) 100%
+  );
+  --gradient-metal: linear-gradient(
+    90deg,
+    oklch(40% 0.01 95) 0%,
+    oklch(80% 0.01 95) 100%
+  );
+  --gradient-dark: linear-gradient(
+    180deg,
+    oklch(20% 0 95) -13.67%,
+    oklch(7% 0 95) 92.78%
+  );
+  --gradient-overlay: radial-gradient(
+    48.97% 48.96% at 48.52% 50%,
+    oklch(98% 0 95) 0%,
+    oklch(15% 0 95 / 0) 100%
+  );
 }
 
 .dark {
@@ -174,7 +195,11 @@
   /* Dark variants of extras */
   --overlay-dark-10: oklch(98% 0 0 / 0.1);
   --overlay-white-30: oklch(100% 0 0 / 0.3);
-  --gradient-primary: linear-gradient(180deg, oklch(15% 0 0) 0%, oklch(30% 0.1 200) 100%);
+  --gradient-primary: linear-gradient(
+    180deg,
+    oklch(15% 0 0) 0%,
+    oklch(30% 0.1 200) 100%
+  );
 }
 
 @layer base {
@@ -186,26 +211,26 @@
     @apply bg-background text-foreground;
     font-family: var(--font-plus-jakarta-sans), sans-serif;
   }
-html,
-body {
-  overflow-x: hidden;   /* horizontal scroll disable */
-  overflow-y: auto;     /* vertical scroll enable for mobile & desktop */
-  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-  scrollbar-width: none; /* hide scrollbar for Firefox */
-}
+  html,
+  body {
+    overflow-x: hidden; /* horizontal scroll disable */
+    overflow-y: auto; /* vertical scroll enable for mobile & desktop */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    scrollbar-width: none; /* hide scrollbar for Firefox */
+  }
 
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none; /* hide scrollbar for Chrome/Safari */
-}
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; /* hide scrollbar for Chrome/Safari */
+    scroll-behavior: smooth;
+  }
 
-/* Lenis overrides */
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
+  /* Lenis overrides */
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
 }
