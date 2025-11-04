@@ -4,6 +4,7 @@ import Footer from "./footer/page";
 import Navbar from "./navbar/page";
 import LenisSmooth from "@/components/LenisSmooth";
 import AOSInit from "@/components/AOSInit";
+import DynamicTitle from "./data/navbar-mock";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -80,6 +81,7 @@ export default function RootLayout({ children }) {
         {/* Smooth scroll and animation components */}
         <LenisSmooth />
         <AOSInit />
+        <DynamicTitle />
 
         {/* Header */}
         <header>
