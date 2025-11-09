@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { content } from "../data/about-mock";
+import React from 'react';
+import Image from 'next/image';
+import { content } from '../data/about-mock';
 
 export default function AboutSection() {
   return (
     <section
       id="About-Us"
-      style={{ background: "rgba(224, 247, 244, 0.99)" }}
+      style={{ background: 'rgba(224, 247, 244, 0.99)' }}
       className="w-full px-6 md:px-16 py-34.5 space-y-24 max-md:py-24 max-sm:py-20"
     >
       {/* === Top Section === */}
@@ -17,7 +17,7 @@ export default function AboutSection() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="rounded-3xl overflow-hidden w-[101.5%] max-md:w-full max-sm:w-full max-sm:rounded-xl"
+          className="rounded-3xl overflow-hidden w-full max-md:w-full max-sm:w-full max-sm:rounded-xl"
         >
           <Image
             src="/images/about-image.png"
@@ -35,15 +35,15 @@ export default function AboutSection() {
             data-aos-duration="2000"
             className="text-[30px] md:text-[45px] text-black font-extrabold mb-2 leading-tight max-md:text-[38px] max-sm:text-[28px]"
           >
-            {content.headingMain}{" "}
-            <span style={{ color: "#0F8F85" }}>{content.headingHighlight}</span>
+            {content.headingMain}{' '}
+            <span style={{ color: '#0F8F85' }}>{content.headingHighlight}</span>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-duration="2000"
             className="text-[16px] mb-6 leading-[1.3] tracking-[0.019em] max-md:text-[15px] max-sm:text-[14px]"
-            style={{ color: "#0F8F85", fontWeight: 600 }}
+            style={{ color: '#0F8F85', fontWeight: 600 }}
           >
             {content.introText}
           </p>
@@ -94,8 +94,8 @@ export default function AboutSection() {
           {/* Left CTA card */}
           <div className="rounded-l-[3rem] overflow-hidden h-full flex items-center w-[120%] max-md:w-full max-sm:rounded-xl">
             <div
-              className="w-full h-full p-8 md:p-10 rounded-2xl flex flex-col justify-center max-md:p-6 max-sm:p-4"
-              style={{ backgroundColor: "#0F1F1D" }}
+              className="size-full p-8 md:p-10 rounded-2xl flex flex-col justify-center max-md:p-6 max-sm:p-4"
+              style={{ backgroundColor: '#0F1F1D' }}
             >
               <h3
                 data-aos="fade-up"

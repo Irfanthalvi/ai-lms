@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { navItems } from "../data/navbar-mock";
+import React from 'react';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { navItems } from '../data/navbar-mock';
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
   SheetTitle,
-} from "@/components/ui/sheet";
-import { X } from "lucide-react";
-import { getLenis } from "@/lib/lenis";
+} from '@/components/ui/sheet';
+import { X } from 'lucide-react';
+import { getLenis } from '@/lib/lenis';
 
 const Navbar = () => {
   const handleScroll = (href) => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           <Link
             href="#hero-section"
-            onClick={() => handleScroll("#hero-section")}
+            onClick={() => handleScroll('#hero-section')}
           >
             <Image
               src="/images/header-footer-logo.png"
@@ -71,7 +71,7 @@ const Navbar = () => {
 
         {/* Button - xl+ */}
         <div className="absolute top-1/2 right-58 -translate-y-1/2 hidden max-xl:hidden xl:block">
-          <Link href="#contact" onClick={() => handleScroll("#contact")}>
+          <Link href="#contact" onClick={() => handleScroll('#contact')}>
             <Button
               className="text-[14px] hover:bg-accent-foreground"
               data-aos="fade-down"
@@ -137,7 +137,7 @@ const Navbar = () => {
                     data-aos="fade-right"
                     data-aos-duration="1000"
                     className="w-full text-[14px]"
-                    onClick={() => handleScroll("#contact")}
+                    onClick={() => handleScroll('#contact')}
                   >
                     Get In Touch
                   </Button>

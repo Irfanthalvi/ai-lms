@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { firstRowCards, secondRowCards } from "../data/how-it-works-mock";
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { firstRowCards, secondRowCards } from '../data/how-it-works-mock';
 
 const HowItWorks = () => {
   return (
@@ -20,7 +20,7 @@ const HowItWorks = () => {
           data-aos-duration="1000"
           className="text-2xl md:text-[46px] font-bold mb-7"
         >
-          How it works:{" "}
+          How it works:{' '}
           <span className="text-teal-400">From start to smart</span>
         </h2>
 

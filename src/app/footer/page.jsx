@@ -1,10 +1,17 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import { contactInfo, navLinks, policyLinks, socialLinks } from "../data/footer-mock";
+import Image from 'next/image';
+import React from 'react';
+import {
+  contactInfo,
+  navLinks,
+  policyLinks,
+  socialLinks,
+} from '../data/footer-mock';
 
 export default function Footer() {
+  // console.log('sdfsd');
+  // const aaa = 'sdfsd';
   return (
     <footer className="w-full bg-background text-[14px]">
       <div className="mx-auto w-[1650px] max-w-full px-2 lg:px-[190px] py-6 space-y-10">
@@ -52,7 +59,10 @@ export default function Footer() {
           {/* Contact */}
           <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 lg:gap-10 max-sm:gap-2 text-secondary">
             {contactInfo.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2 max-sm:items-start">
+              <div
+                key={idx}
+                className="flex items-center gap-2 max-sm:items-start"
+              >
                 <span className="text-primary-foreground shrink-0 text-[14px] max-sm:text-[12px]">
                   {item.icon}
                 </span>
@@ -67,8 +77,10 @@ export default function Footer() {
 
         {/* === Row 3: Copyright === */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pb-6 text-secondary text-[13px] max-sm:text-[11px] max-md:gap-3">
-          <span  className="max-sm:text-[11px]">Copyright © {new Date().getFullYear()} AiELM. All rights reserved.</span>
-          <div  className="flex flex-wrap gap-6 lg:gap-8 max-sm:gap-4">
+          <span className="max-sm:text-[11px]">
+            Copyright © {new Date().getFullYear()} AiELM. All rights reserved.
+          </span>
+          <div className="flex flex-wrap gap-6 lg:gap-8 max-sm:gap-4">
             {policyLinks.map((link) => (
               <a
                 key={link.label}

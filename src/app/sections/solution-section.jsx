@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import { CheckCircle } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import React from 'react';
+import { CheckCircle } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 import {
   cards,
   description1,
@@ -11,7 +11,7 @@ import {
   highlight,
   icons,
   mainTitle,
-} from "../data/solution-mock";
+} from '../data/solution-mock';
 
 export default function SolutionSection() {
   return (

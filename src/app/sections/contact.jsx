@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { useForm, Controller } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import toast, { Toaster } from "react-hot-toast";
-import { formFields } from "../data/contact-mock";
-import { contactSchema } from "../validation/contact-validation";
+import React from 'react';
+import Image from 'next/image';
+import { useForm, Controller } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import toast, { Toaster } from 'react-hot-toast';
+import { formFields } from '../data/contact-mock';
+import { contactSchema } from '../validation/contact-validation';
 
 export default function Contact() {
   const {
@@ -24,9 +24,8 @@ export default function Contact() {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = (data) => {
-    console.log("✅ Submitted data:", data);
-    toast.success("Form submitted successfully!");
+  const onSubmit = () => {
+    toast.success('Form submitted successfully!');
     reset();
   };
 
@@ -98,7 +97,7 @@ export default function Contact() {
               {formFields.map((field) => (
                 <div
                   key={field.name}
-                  className={field.col === 1 ? "md:col-span-2" : ""}
+                  className={field.col === 1 ? 'md:col-span-2' : ''}
                 >
                   <Label className="text-black mb-3 block text-[15px] max-md:text-[14px]">
                     {field.label}
@@ -125,7 +124,7 @@ export default function Contact() {
                 placeholder="Start typing your message here"
                 rows={6}
                 className="text-black bg-white placeholder-gray-600 border-gray-300 h-[110px]"
-                {...register("message")}
+                {...register('message')}
               />
               <p className="text-red-500 text-xs mt-1">
                 {errors.message?.message}
@@ -147,10 +146,10 @@ export default function Contact() {
                 )}
               />
               <Label className="text-sm leading-snug text-black max-md:text-center">
-                I agree to AiELM’s{" "}
+                I agree to AiELM’s{' '}
                 <a href="#" className="text-teal-700 underline">
                   Privacy Policy
-                </a>{" "}
+                </a>{' '}
                 and to receive emails from AiELM.
               </Label>
             </div>

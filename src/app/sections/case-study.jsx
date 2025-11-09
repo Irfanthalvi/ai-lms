@@ -1,7 +1,6 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
 import {
   ctaButton,
   ctaText1,
@@ -13,7 +12,7 @@ import {
   introText,
   mainTitle,
   systemTitle,
-} from "../data/case-study-mock";
+} from '../data/case-study-mock';
 
 const Casestudy = () => {
   return (
@@ -77,9 +76,10 @@ const Casestudy = () => {
 
       {/* LEFT CONTENT */}
       <div
+        /*figma k hisab say ml-56 ha*/
         className="
           relative z-10 
-          ml-56
+          ml-35
           w-[700px] 
           pt-1
           min-h-[600px] 

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { items } from "../data/industries-mock";
+import React from 'react';
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { items } from '../data/industries-mock';
 
 const Industries = () => {
   return (
@@ -16,9 +16,7 @@ const Industries = () => {
         >
           Built for every industry,
           <br />
-          <span className="text-teal-700">
-            Designed for impact
-          </span>
+          <span className="text-teal-700">Designed for impact</span>
         </h2>
 
         <p
@@ -40,23 +38,23 @@ const Industries = () => {
               key={idx}
               className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col"
               style={{
-                height: "427px", // total card height
-                width: "100%", // full width of the grid cell
+                height: '427px', // total card height
+                width: '100%', // full width of the grid cell
                 background:
-                  "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
+                  'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)',
               }}
               data-aos="fade-up"
               data-aos-duration="2000"
             >
               <div
                 className="relative w-full overflow-hidden rounded-sm group"
-                style={{ height: "60%" }}
+                style={{ height: '60%' }}
                 data-aos="zoom-in-up" // scroll animation
                 data-aos-once="true" // animate once on scroll (optional)
               >
                 <Image
                   src={item.img}
-                  alt={item.title || "Section image"}
+                  alt={item.title || 'Section image'}
                   fill
                   className="cursor-pointer object-cover transition-transform duration-700 ease-out 
                group-hover:scale-110 group-hover:-translate-y-3 rounded-sm"
@@ -65,7 +63,7 @@ const Industries = () => {
 
               {/* Content section: 40% of card height */}
               <CardContent
-                style={{ height: "40%" }}
+                style={{ height: '40%' }}
                 className="flex flex-col justify-start p-4"
               >
                 <p className="uppercase text-[12px] font-semibold text-[#006D77] mb-1">

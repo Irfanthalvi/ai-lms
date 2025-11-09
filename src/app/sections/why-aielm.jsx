@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { aielm } from "../data/why-aielm-mock";
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { aielm } from '../data/why-aielm-mock';
 
 const Whyaielm = () => {
   return (
@@ -33,7 +33,7 @@ const Whyaielm = () => {
       max-sm:mb-[8px]
     "
           >
-            Why leading enterprises choose{" "}
+            Why leading enterprises choose{' '}
             <span className="text-primary">AiELM</span>
           </h2>
 
@@ -68,7 +68,7 @@ const Whyaielm = () => {
               className="rounded-xl overflow-hidden flex flex-col h-[358px] w-full p-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)",
+                  'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)',
               }}
             >
               {/* Image */}
@@ -79,7 +79,7 @@ const Whyaielm = () => {
               >
                 <Image
                   src={item.img}
-                  alt={item.title || "Section image"}
+                  alt={item.title || 'Section image'}
                   fill
                   className="cursor-pointer object-cover object-center transition-transform duration-700 ease-out 
                group-hover:scale-110 group-hover:-translate-y-3"
@@ -115,13 +115,13 @@ const Whyaielm = () => {
 
           {/* Right → Paragraph + Button */}
           <div className="flex flex-col text-left space-y-6 w-full relative translate-y-2">
-            <p className="font-normal text-[16px] leading-[24px] text-black max-w-full">
+            <p className="font-normal text-[16px] leading-6 text-black max-w-full">
               Achieve total workforce alignment, proven compliance, and
               real-time
               <br /> productivity—powered by intelligent automation.
             </p>
 
-            <Button className="bg-primary text-foreground px-4 py-3 rounded-lg text-[14px] leading-[24px] w-[140px]">
+            <Button className="bg-primary text-foreground px-4 py-3 rounded-lg text-[14px] leading-6 md:w-[140px]">
               Request a Demo
             </Button>
           </div>

@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 import {
   bgImage,
   tagline,
   title1,
   title2,
   videoSrc,
-} from "../data/hero-section-mock";
+} from '../data/hero-section-mock';
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
             src={bgImage}
             alt="Background pattern"
             fill
-            style={{ objectFit: "cover", objectPosition: "center" }}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
             quality={100}
             className="pointer-events-none"
             priority
