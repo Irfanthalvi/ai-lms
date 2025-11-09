@@ -39,7 +39,7 @@ const Header = () => {
             w-[1312px] h-[220px] flex flex-col items-center gap-[33.5px] z-10 transform translate-y-7
             max-2xl:w-[1150px] max-xl:w-[950px] max-lg:w-[700px] max-md:w-[90%] max-sm:w-[95%]
             max-2xl:h-[200px] max-xl:h-[180px] max-lg:h-auto
-            max-xl:gap-[28px] max-lg:gap-[22px] max-md:gap-[18px] max-sm:gap-[14px]
+            max-xl:gap-7 max-lg:gap-[22px] max-md:gap-[18px] max-sm:gap-3.5
             max-md:translate-y-5 max-sm:translate-y-4
           "
         >

@@ -28,9 +28,9 @@ const Whyaielm = () => {
       max-sm:text-[22px] 
       leading-[120%] 
       text-secondary-foreground 
-      mb-[12px] 
-      max-md:mb-[10px] 
-      max-sm:mb-[8px]
+      mb-3 
+      max-md:mb-2.5 
+      max-sm:mb-2
     "
           >
             Why leading enterprises choose{' '}

@@ -38,8 +38,8 @@ const Industries = () => {
               key={idx}
               className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col"
               style={{
-                height: '427px', // total card height
-                width: '100%', // full width of the grid cell
+                height: '427px',
+                width: '100%',
                 background:
                   'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)',
               }}
@@ -49,8 +49,8 @@ const Industries = () => {
               <div
                 className="relative w-full overflow-hidden rounded-sm group"
                 style={{ height: '60%' }}
-                data-aos="zoom-in-up" // scroll animation
-                data-aos-once="true" // animate once on scroll (optional)
+                data-aos="zoom-in-up"
+                data-aos-once="true"
               >
                 <Image
                   src={item.img}
@@ -60,8 +60,6 @@ const Industries = () => {
                group-hover:scale-110 group-hover:-translate-y-3 rounded-sm"
                 />
               </div>
-
-              {/* Content section: 40% of card height */}
               <CardContent
                 style={{ height: '40%' }}
                 className="flex flex-col justify-start p-4"

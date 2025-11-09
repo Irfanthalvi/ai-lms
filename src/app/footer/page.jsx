@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import {
   contactInfo,
@@ -10,8 +11,6 @@ import {
 } from '../data/footer-mock';
 
 export default function Footer() {
-  // console.log('sdfsd');
-  // const aaa = 'sdfsd';
   return (
     <footer className="w-full bg-background text-[14px]">
       <div className="mx-auto w-[1650px] max-w-full px-2 lg:px-[190px] py-6 space-y-10">
@@ -29,14 +28,14 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav className="flex flex-wrap gap-6 lg:gap-8 font-normal text-secondary max-md:gap-4 max-sm:gap-2">
-            {navLinks.map((link) => (
-              <a
-                key={link}
+            {navLinks.map((link, idx) => (
+              <Link
+                key={idx}
                 href="#"
                 className="hover:text-primary transition-colors text-[14px] max-sm:text-[8px]"
               >
                 {link}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
@@ -46,13 +45,13 @@ export default function Footer() {
           {/* Social icons */}
           <div className="flex gap-6 text-xl text-primary-foreground max-sm:gap-5">
             {socialLinks.map((social, idx) => (
-              <a
+              <Link
                 key={idx}
                 href={social.href}
-                className="hover:text-secondary transition-colors text-[22px] max-sm:text-[18px] "
+                className="hover:text-secondary transition-colors text-[22px] max-sm:text-[18px]"
               >
                 {social.icon}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -81,14 +80,14 @@ export default function Footer() {
             Copyright © {new Date().getFullYear()} AiELM. All rights reserved.
           </span>
           <div className="flex flex-wrap gap-6 lg:gap-8 max-sm:gap-4">
-            {policyLinks.map((link) => (
-              <a
-                key={link.label}
+            {policyLinks.map((link, idx) => (
+              <Link
+                key={idx}
                 href={link.href}
                 className="transition-colors text-[13px] max-sm:text-[11px]"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

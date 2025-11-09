@@ -19,8 +19,8 @@ const Navbar = () => {
   const handleScroll = (href) => {
     const target = document.querySelector(href);
     if (target) {
-      const lenis = getLenis(); // your global Lenis instance
-      const headerOffset = 80; // adjust based on navbar height
+      const lenis = getLenis();
+      const headerOffset = 80;
       const targetPosition =
         target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
@@ -55,7 +55,7 @@ const Navbar = () => {
         <nav
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex space-x-4 hidden max-xl:hidden xl:flex"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-x-4 hidden max-xl:hidden xl:flex"
         >
           {navItems.map((item, index) => (
             <Link

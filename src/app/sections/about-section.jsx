@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { content } from '../data/about-mock';
+import { Button } from '@/components/ui/button';
 
 export default function AboutSection() {
   return (
@@ -108,18 +109,18 @@ export default function AboutSection() {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="text-[16px] mb-6 max-w-md text-gray-300 leading-[1.5] ml-20 max-md:ml-0 max-md:text-[15px] max-sm:text-[14px]"
+                className="text-[16px] mb-6 max-w-md text-gray-300 leading-normal ml-20 max-md:ml-0 max-md:text-[15px] max-sm:text-[14px]"
               >
                 {content.ctaText}
               </p>
 
-              <button
+              <Button
                 data-aos="fade-up"
                 data-aos-duration="2000"
                 className="ml-20 max-md:ml-0 w-44 px-4 py-2 bg-[#0F8F85] hover:bg-[#0c736a] text-white rounded-md text-sm font-medium transition max-sm:w-full"
               >
                 {content.ctaButton}
-              </button>
+              </Button>
             </div>
           </div>
 

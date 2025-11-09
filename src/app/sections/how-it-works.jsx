@@ -8,7 +8,7 @@ const HowItWorks = () => {
   return (
     <section
       id="How-it-works"
-      className="relative w-full py-20 px-6 bg-gradient-to-b from-card-foreground to-card text-white overflow-hidden"
+      className="relative w-full py-20 px-6 bg-linear-to-b from-card-foreground to-card text-white overflow-hidden"
     >
       {/* Background grid */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 pointer-events-none" />
@@ -56,7 +56,7 @@ const HowItWorks = () => {
               "
             >
               <CardContent className="flex flex-col items-start justify-center text-start">
-                <div className="size-10.5 flex items-center justify-center rounded-[8px] bg-teal-400 mb-6">
+                <div className="size-10.5 flex items-center justify-center rounded-lg bg-teal-400 mb-6">
                   {card.icon}
                 </div>
                 <h3 className="font-semibold text-[23px] tracking-normal text-white pb-3 max-xl:text-[20px] max-lg:text-[18px]">
@@ -89,7 +89,7 @@ const HowItWorks = () => {
                 bg-black/80 border-0 rounded-xl 
                 w-[390px] h-[310px] pl-2 pt-8
                 max-2xl:w-[350px] max-2xl:h-[285px]
-                max-xl:w-[320px] max-xl:h-[320px]
+                max-xl:w-[320px] max-xl:h-80
                 max-lg:w-full max-lg:h-auto
               "
             >
