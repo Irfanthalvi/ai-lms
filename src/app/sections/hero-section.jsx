@@ -26,7 +26,6 @@ const Header = () => {
             src={bgImage}
             alt="Background pattern"
             fill
-            style={{ objectFit: 'cover', objectPosition: 'center' }}
             quality={100}
             className="pointer-events-none"
             priority
@@ -47,7 +46,7 @@ const Header = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             className="
-              bg-primary text-accent w-[305px] text-sm tracking-wide py-1 rounded-full flex items-center justify-center mb-[1.5px]
+              bg-primary w-[305px] text-sm tracking-wide py-1 rounded-full flex items-center justify-center mb-[1.5px]
               max-xl:w-[270px] max-lg:w-[230px] max-md:w-[200px] max-sm:w-[170px]
               max-lg:text-[13px] max-md:text-[12px] max-sm:text-[8px]
             "

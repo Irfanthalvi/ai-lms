@@ -51,7 +51,9 @@ export default function SolutionSection() {
           return (
             <Card
               key={i}
-              className="rounded-2xl h-[296px] w-[390px] border border-transparent bg-foreground
+              className="rounded-2xl h-[296px] w-[390px] border border-transparent  bg-gradient-to-b 
+                from-(--bg-color-from)
+                to-(--bg-color-to)
                 max-2xl:w-[350px] max-2xl:h-[280px]
                 max-xl:w-[306px] max-xl:h-[300px]
                 max-lg:w-full max-lg:h-auto
@@ -73,11 +75,23 @@ export default function SolutionSection() {
                     {item.title}
                   </h3>
                   <p
-                    className="text-[14px] text-center mb-5 max-w-[320px] leading-relaxed text-background
-                      max-xl:text-[13px] max-lg:text-[12px] max-md:text-[12px] max-sm:text-[11px] max-sm:mb-4
-                    "
-                    dangerouslySetInnerHTML={{ __html: item.desc }}
-                  />
+                    className="
+                  text-[14px] 
+                  text-center 
+                  mb-5 
+                  max-w-[320px] 
+                  leading-relaxed 
+                  text-background
+                  whitespace-pre-line
+                  max-xl:text-[13px] 
+                  max-lg:text-[12px] 
+                  max-md:text-[12px] 
+                  max-sm:text-[11px] 
+                  max-sm:mb-4
+                "
+                  >
+                    {item.desc}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -99,12 +113,21 @@ export default function SolutionSection() {
             </div>
             <div className="w-full">
               <p
-                className="text-[18px] leading-snug text-background max-xl:text-[16px] max-lg:text-[15px] 
-                max-md:text-[14px] max-sm:text-[13px]"
-                dangerouslySetInnerHTML={{
-                  __html: `<span class='font-semibold text-accent'>${feature.label}</span> ${feature.desc}`,
-                }}
-              />
+                className="
+                text-[18px] 
+                leading-snug 
+                text-background 
+                max-xl:text-[16px] 
+                max-lg:text-[15px] 
+                max-md:text-[14px] 
+                max-sm:text-[13px]
+              "
+              >
+                <span className="font-semibold text-accent">
+                  {feature.label}
+                </span>{' '}
+                {feature.desc}
+              </p>
             </div>
           </div>
         ))}

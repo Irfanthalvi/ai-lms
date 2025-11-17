@@ -63,13 +63,23 @@ const Casestudy = () => {
         {/* Intro Text */}
         <p
           className="
-            text-foreground  pl-1 mb-10  text-[16px]  tracking-[0.01em]leading-[1.4] max-xl:text-[12px] 
-            max-lg:text-[13.5px]  max-md:text-[13px] max-sm:text-[6px]
-          "
-          dangerouslySetInnerHTML={{ __html: introText }}
+             text-foreground 
+             pl-1 
+             mb-10  
+             text-[16px]  
+             tracking-[0.01em] 
+             leading-[1.4] 
+             whitespace-pre-line
+             max-xl:text-[12px] 
+             max-lg:text-[13.5px] 
+             max-md:text-[13px] 
+             max-sm:text-[6px]
+             "
           data-aos="fade-up"
           data-aos-duration="1500"
-        />
+        >
+          {introText}
+        </p>
 
         {/* Features */}
         <div

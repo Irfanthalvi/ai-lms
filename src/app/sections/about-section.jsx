@@ -9,8 +9,7 @@ export default function AboutSection() {
   return (
     <section
       id="About-Us"
-      style={{ background: 'rgba(224, 247, 244, 0.99)' }}
-      className="w-full px-6 md:px-16 py-34.5 space-y-24 max-md:py-24 max-sm:py-20"
+      className="w-full bg-accent-foreground px-6 md:px-16 py-34.5 space-y-24 max-md:py-24 max-sm:py-20"
     >
       {/* === Top Section === */}
       <div
@@ -41,14 +40,13 @@ export default function AboutSection() {
             max-md:text-[38px] max-sm:text-[28px]"
           >
             {content.headingMain}{' '}
-            <span style={{ color: '#0F8F85' }}>{content.headingHighlight}</span>
+            <span className="text-primary">{content.headingHighlight}</span>
           </h2>
 
           <p
             data-aos="fade-up"
             data-aos-duration="2000"
-            className="text-[16px] mb-6 leading-[1.3] tracking-[0.019em] max-md:text-[15px] max-sm:text-[14px]"
-            style={{ color: '#0F8F85', fontWeight: 600 }}
+            className="text-[16px] text-primary mb-6 fontWeight: 600 leading-[1.3] tracking-[0.019em] max-md:text-[15px] max-sm:text-[14px]"
           >
             {content.introText}
           </p>
@@ -102,8 +100,8 @@ export default function AboutSection() {
            max-sm:rounded-xl"
           >
             <div
-              className="size-full p-8 md:p-10 rounded-2xl flex flex-col justify-center max-md:p-6 max-sm:p-4"
-              style={{ backgroundColor: '#0F1F1D' }}
+              className="size-full bg-linear-to-b from-card-foreground to-card
+                 p-8 md:p-10 rounded-2xl flex flex-col justify-center max-md:p-6 max-sm:p-4"
             >
               <h3
                 data-aos="fade-up"

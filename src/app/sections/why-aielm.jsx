@@ -65,11 +65,18 @@ const Whyaielm = () => {
               data-aos="fade-up"
               data-aos-duration="2500"
               key={idx}
-              className="rounded-xl overflow-hidden flex flex-col h-[358px] w-full p-0"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)',
-              }}
+              className="
+               rounded-xl
+               overflow-hidden
+               flex
+               flex-col
+               h-[358px]
+               w-full
+               p-0
+               bg-gradient-to-b
+               from-[rgba(255,255,255,0.3)]
+               to-[rgba(131,197,190,0.3)]
+                 "
             >
               {/* Image */}
               <div

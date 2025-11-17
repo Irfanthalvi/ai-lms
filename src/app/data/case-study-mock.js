@@ -5,7 +5,7 @@ export const mainTitle = 'Building Smarter Compliance';
 export const systemTitle = 'Systems:';
 export const highlighted = 'AiELM in Action with DQid';
 export const introText =
-  'DQid partnered with AiELM to build an English Language Proficiency & Compliance<br/> System that delivers AI-powered testing, real-time scoring, and automated certification<br/> to help fleets stay compliant and operational.';
+  'DQid partnered with AiELM to build an English Language Proficiency & Compliance \n System that delivers AI-powered testing, real-time scoring, and automated certification\n to help fleets stay compliant and operational.';
 
 export const features = [
   {

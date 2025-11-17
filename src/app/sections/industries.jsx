@@ -36,19 +36,31 @@ const Industries = () => {
           {items.map((item, idx) => (
             <Card
               key={idx}
-              className="border-0 rounded-xl shadow-lg overflow-hidden flex flex-col"
-              style={{
-                height: '427px',
-                width: '100%',
-                background:
-                  'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(131,197,190,0.3) 100%)',
-              }}
+              className="
+                  border-0
+                  rounded-xl
+                  shadow-lg
+                  overflow-hidden
+                  flex
+                  flex-col
+                  h-[427px]
+                  w-full
+                  bg-gradient-to-b 
+                from-(--bg-color-from)
+                to-(--bg-color-to)
+  "
               data-aos="fade-up"
               data-aos-duration="2000"
             >
               <div
-                className="relative w-full overflow-hidden rounded-sm group"
-                style={{ height: '60%' }}
+                className="
+                relative
+                w-full
+                overflow-hidden
+                rounded-sm
+                group
+                h-[60%]
+  "
                 data-aos="zoom-in-up"
                 data-aos-once="true"
               >
@@ -56,13 +68,18 @@ const Industries = () => {
                   src={item.img}
                   alt={item.title || 'Section image'}
                   fill
-                  className="cursor-pointer object-cover transition-transform duration-700 ease-out 
-               group-hover:scale-110 group-hover:-translate-y-3 rounded-sm"
+                  className="cursor-pointer object-cover transition-transform duration-700 ease-out
+                   group-hover:scale-110 group-hover:-translate-y-3 rounded-sm"
                 />
               </div>
               <CardContent
-                style={{ height: '40%' }}
-                className="flex flex-col justify-start p-4"
+                className="
+                flex 
+                flex-col 
+                justify-start 
+                p-4 
+                h-[40%]
+  "
               >
                 <p className="uppercase text-[12px] font-semibold text-primary mb-1">
                   {item.note}

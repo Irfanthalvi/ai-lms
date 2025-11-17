@@ -11,32 +11,32 @@ export const cards = [
   {
     icon: 'ShieldCheck',
     title: 'AI-Speech Recognition',
-    desc: `Built-in speech recognition enables real-time <br /> language proficiency testing, adaptive <br/> learning, and conversational AI tutors that <br/> engage every learner.`,
+    desc: `Built-in speech recognition enables real-time\n language proficiency testing, adaptive\n learning, and conversational AI tutors that\n engage every learner.`,
   },
   {
     icon: 'Eye',
     title: 'Vision Capabilities',
-    desc: 'Through facial recognition, eye-tracking, and <br/> micro-expression analysis, AiELM provides <br/> deep insights into focus, engagement, and <br/> learner behavior.',
+    desc: 'Through facial recognition, eye-tracking, and\n micro-expression analysis, AiELM provides\n deep insights into focus, engagement, and\n learner behavior.',
   },
   {
     icon: 'Server',
     title: 'Seamless API Integrations',
-    desc: 'AiELM connects effortlessly with HRIS, ERP, <br/> LMS, and compliance systems, ensuring <br/> smooth workflows and data flow across your <br/> enterprise.',
+    desc: 'AiELM connects effortlessly with HRIS, ERP,\n LMS, and compliance systems, ensuring\n smooth workflows and data flow across your\n enterprise.',
   },
 ];
 
 export const features = [
   {
     label: 'Trusted Authentication:',
-    desc: 'With multi-<br/> modal biometrics and continuous<br/> identity checks, AiELM guarantees <br/> secure, verified learning sessions that <br/> meet the compliance standards.',
+    desc: 'With multi-\n modal biometrics and continuous\n identity checks, AiELM guarantees\n secure, verified learning sessions that\n meet the compliance standards.',
   },
   {
     label: 'Real-Time Data:',
-    desc: 'AiELM captures and<br/> processes data live, delivering instant<br/> dashboards, compliance alerts, and<br/> actionable insights when you need<br/> them most.',
+    desc: 'AiELM captures and\n processes data live, delivering instant\n dashboards, compliance alerts, and\n actionable insights when you need\n them most.',
   },
   {
     label: 'Predictive Analytics:',
-    desc: 'Powered by AI<br/> models, AiELM predicts training<br/> outcomes, workforce risks, and<br/> efficiency gains, turning learning into a<br/> strategic advantage.',
+    desc: 'Powered by AI\n models, AiELM predicts training\n outcomes, workforce risks, and\n efficiency gains, turning learning into a\n strategic advantage.',
   },
 ];
 
