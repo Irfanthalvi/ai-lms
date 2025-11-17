@@ -88,10 +88,10 @@ const Whyaielm = () => {
 
               {/* Content */}
               <CardContent className="flex flex-col text-left p-5 relative">
-                <h3 className="font-bold text-background relative top-[-15px] left-[6px]">
+                <h3 className="font-bold text-background relative top-[-15px] left-1.5">
                   {item.title}
                 </h3>
-                <p className="font-semi-bold text-sm text-background/90 relative top-[-14px] left-[6px]">
+                <p className="font-semi-bold text-sm text-background/90 relative -top-3.5 left-1.5">
                   {item.desc}
                 </p>
               </CardContent>
@@ -107,7 +107,7 @@ const Whyaielm = () => {
         >
           {/* Left → Heading */}
           <div className="w-full md:w-[500px] flex flex-col text-left ">
-            <h3 className="font-bold text-[38px] max-lg:text-[30px] leading-[120%] tracking-[0] text-black font-headline">
+            <h3 className="font-bold text-[38px] max-lg:text-[30px] leading-[120%] tracking-[0] text-background font-headline">
               <span>Elevate Learning.</span>
               <span className="block">Accelerate Performance.</span>
             </h3>
@@ -115,7 +115,7 @@ const Whyaielm = () => {
 
           {/* Right → Paragraph + Button */}
           <div className="flex flex-col text-left space-y-6 w-full relative translate-y-2">
-            <p className="font-normal text-[16px] leading-6 text-black max-w-full">
+            <p className="font-normal text-[16px] leading-6 text-background max-w-full">
               Achieve total workforce alignment, proven compliance, and
               real-time
               <br /> productivity—powered by intelligent automation.

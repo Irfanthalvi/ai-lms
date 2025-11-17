@@ -20,7 +20,7 @@ const Casestudy = () => {
     <section
       id="Case-study"
       className="
-        relative flex  w-full  bg-[#0A1E28]  text-white  py-37  overflow-visible   max-lg:flex-col-reverse "
+        relative flex w-full bg-linear-to-b from-card-foreground to-card text-foreground py-37 overflow-visible   max-lg:flex-col-reverse "
     >
       {/* RIGHT IMAGE */}
       <div
@@ -57,13 +57,13 @@ const Casestudy = () => {
         >
           {mainTitle}
           <br />
-          {systemTitle} <span className="text-[#4FD1C5]">{highlighted}</span>
+          {systemTitle} <span className="text-accent">{highlighted}</span>
         </h2>
 
         {/* Intro Text */}
         <p
           className="
-            text-gray-300  pl-1 mb-10  text-[16px]  tracking-[0.01em]leading-[1.4] max-xl:text-[12px] 
+            text-foreground  pl-1 mb-10  text-[16px]  tracking-[0.01em]leading-[1.4] max-xl:text-[12px] 
             max-lg:text-[13.5px]  max-md:text-[13px] max-sm:text-[6px]
           "
           dangerouslySetInnerHTML={{ __html: introText }}
@@ -89,11 +89,11 @@ const Casestudy = () => {
                   flex  items-start  gap-6.5 max-xl:gap-2   max-lg:gap-3  max-md:gap-2.5
                 "
               >
-                <Icon className="size-8 text-[#4FD1C5] shrink-0 max-xl:size-4 max-lg:size-6 max-md:size-5 max-sm:size-5" />
+                <Icon className="size-8 text-accent shrink-0 max-xl:size-4 max-lg:size-6 max-md:size-5 max-sm:size-5" />
                 <div>
                   <h3
                     className="
-                      text-gray-200  font-semibold  mb-3.5  text-[19px] max-xl:text-[12px] max-lg:text-[16px]
+                      text-foreground font-semibold  mb-3.5  text-[19px] max-xl:text-[12px] max-lg:text-[16px]
                       max-md:text-[15px] max-sm:text-[14px]
                     "
                   >
@@ -101,7 +101,7 @@ const Casestudy = () => {
                   </h3>
                   <p
                     className="
-                      text-gray-300  text-[16px] leading-normal tracking-[0.02em] whitespace-pre-line 
+                      text-foreground  text-[16px] leading-normal tracking-[0.02em] whitespace-pre-line 
                       max-xl:text-[9px]  max-lg:text-[13px] max-md:text-[12.5px] max-sm:leading-[1.6]
                     "
                   >
@@ -115,7 +115,7 @@ const Casestudy = () => {
 
         {/* CTA */}
         <div
-          className="text-gray-200"
+          className="text-foreground"
           data-aos="fade-up"
           data-aos-duration="2500"
         >
@@ -138,7 +138,7 @@ const Casestudy = () => {
 
           <Button
             className="
-              mt-6  px-6  py-2.5 max-lg:mb-10bg-[#18a897]  hover:bg-[#139183] text-white  text-[15px] 
+              mt-6  px-6  py-2.5 max-lg:mb-10bg-[#18a897]  hover:bg-accent text-foreground  text-[15px] 
               font-medium  rounded-md transition-all duration-300  shadow-md  max-md:mt-4  max-md:px-5  max-md:py-2
             "
           >

@@ -7,22 +7,22 @@ import { items } from '../data/industries-mock';
 
 const Industries = () => {
   return (
-    <section id="industries" className="w-full bg-white py-39">
+    <section id="industries" className="w-full bg-foreground py-39">
       <div className="px-4 text-center">
         <h2
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-[43.5px] font-bold leading-[1.01] tracking-wide text-gray-900"
+          className="text-[43.5px] font-bold leading-[1.01] tracking-wide text-background"
         >
           Built for every industry,
           <br />
-          <span className="text-teal-700">Designed for impact</span>
+          <span className="text-primary">Designed for impact</span>
         </h2>
 
         <p
           data-aos="fade-up"
           data-aos-duration="1500"
-          className="mt-10 text-black text-[17px] leading-[1.3] -tracking-[0.021em]"
+          className="mt-10 text-background text-[17px] leading-[1.3] -tracking-[0.021em]"
         >
           Whether it’s healthcare, finance, manufacturing, or retail, AELEM
           adapts to the unique compliance <br />
@@ -64,13 +64,13 @@ const Industries = () => {
                 style={{ height: '40%' }}
                 className="flex flex-col justify-start p-4"
               >
-                <p className="uppercase text-[12px] font-semibold text-[#006D77] mb-1">
+                <p className="uppercase text-[12px] font-semibold text-primary mb-1">
                   {item.note}
                 </p>
-                <h3 className="text-[20px] font-semibold text-[#0A0A0A] mb-1">
+                <h3 className="text-[20px] font-semibold text-background mb-1">
                   {item.title}
                 </h3>
-                <p className="text-[14px] text-left text-[#0A0A0A] leading-6 max-sm:text-[12px]">
+                <p className="text-[14px] text-left text-background leading-6 max-sm:text-[12px]">
                   {item.desc}
                 </p>
               </CardContent>

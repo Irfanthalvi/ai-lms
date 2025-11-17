@@ -8,7 +8,7 @@ const HowItWorks = () => {
   return (
     <section
       id="How-it-works"
-      className="relative w-full py-20 px-6 bg-linear-to-b from-card-foreground to-card text-white overflow-hidden"
+      className="relative w-full py-20 px-6 bg-linear-to-b from-card-foreground to-card text-foreground overflow-hidden"
     >
       {/* Background grid */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 pointer-events-none" />
@@ -20,14 +20,13 @@ const HowItWorks = () => {
           data-aos-duration="1000"
           className="text-2xl md:text-[46px] font-bold mb-7"
         >
-          How it works:{' '}
-          <span className="text-teal-400">From start to smart</span>
+          How it works: <span className="text-accent">From start to smart</span>
         </h2>
 
         <p
           data-aos="fade-up"
           data-aos-duration="1500"
-          className="mx-auto text-base md:text-[16.5px] text-gray-300 mb-14 leading-relaxed"
+          className="mx-auto text-base md:text-[16.5px] text-foreground mb-14 leading-relaxed"
         >
           Behind every training session, AiELM runs a powerful, intelligent
           workflow designed to verify,
@@ -48,7 +47,7 @@ const HowItWorks = () => {
             <Card
               key={index}
               className="
-                bg-black/80 border-0 rounded-xl 
+                bg-background/80 border-0 rounded-xl 
                 w-[605px] h-[285px] pl-1.5 pt-7.5
                 max-2xl:w-[550px] max-2xl:h-[260px]
                 max-xl:w-[480px] max-xl:h-[290px]
@@ -56,16 +55,16 @@ const HowItWorks = () => {
               "
             >
               <CardContent className="flex flex-col items-start justify-center text-start">
-                <div className="size-10.5 flex items-center justify-center rounded-lg bg-teal-400 mb-6">
+                <div className="size-10.5 flex items-center justify-center rounded-lg bg-accent mb-6">
                   {card.icon}
                 </div>
-                <h3 className="font-semibold text-[23px] tracking-normal text-white pb-3 max-xl:text-[20px] max-lg:text-[18px]">
+                <h3 className="font-semibold text-[23px] tracking-normal text-foreground pb-3 max-xl:text-[20px] max-lg:text-[18px]">
                   {card.title}
                 </h3>
-                <p className="text-[14px] text-gray-300 leading-relaxed tracking-[0.013em] pb-6 max-lg:text-[13px]">
+                <p className="text-[14px] text-foreground leading-relaxed tracking-[0.013em] pb-6 max-lg:text-[13px]">
                   {card.desc}
                 </p>
-                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline tracking-[0.032em]">
+                <p className="text-sm font-semibold text-accent uppercase hover:underline tracking-[0.032em]">
                   {card.footer}
                 </p>
               </CardContent>
@@ -86,7 +85,7 @@ const HowItWorks = () => {
             <Card
               key={index}
               className="
-                bg-black/80 border-0 rounded-xl 
+                bg-background/80 border-0 rounded-xl 
                 w-[390px] h-[310px] pl-2 pt-8
                 max-2xl:w-[350px] max-2xl:h-[285px]
                 max-xl:w-[320px] max-xl:h-80
@@ -94,16 +93,16 @@ const HowItWorks = () => {
               "
             >
               <CardContent className="flex flex-col items-start justify-center text-start">
-                <div className="size-10 flex items-center justify-center rounded-md bg-teal-500 mb-5.5">
+                <div className="size-10 flex items-center justify-center rounded-md bg-accent mb-5.5">
                   {card.icon}
                 </div>
-                <h3 className="font-semibold text-[22px] text-white pb-3.5 max-xl:text-[20px] max-lg:text-[18px]">
+                <h3 className="font-semibold text-[22px] text-foreground pb-3.5 max-xl:text-[20px] max-lg:text-[18px]">
                   {card.title}
                 </h3>
-                <p className="text-sm text-gray-300 leading-relaxed pb-6 max-lg:text-[13px]">
+                <p className="text-sm text-foreground leading-relaxed pb-6 max-lg:text-[13px]">
                   {card.desc}
                 </p>
-                <p className="text-sm font-semibold text-teal-400 uppercase hover:underline">
+                <p className="text-sm font-semibold text-accent uppercase hover:underline">
                   {card.footer}
                 </p>
               </CardContent>

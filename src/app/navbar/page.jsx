@@ -96,7 +96,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent
               side="left"
-              className="p-6 w-full max-w-full bg-black/90 text-white backdrop-blur-md"
+              className="p-6 w-full max-w-full bg-background/90 text-foreground backdrop-blur-md"
             >
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div
